@@ -89,8 +89,75 @@
       $ sudo systemctl start jupyter
       $ sudo systemctl status jupyter
       ※ 재부팅 후 한 30초 정도면 올라옴
-      
-      
+3.Docker 설치
+  1) 설치
+    $ sudo apt-get update
+    $ sudo apt install apt-transport-https
+    $ sudo apt install ca-certificates
+    $ sudo apt install curl
+      - 특정한 웹사이트에서 어떤 데이터를 다운로드 받을 때 사용
+    $ sudo apt install software-properties-common
+    $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+      - 도커 설치를 위해서 gpg내용을 다운로드
+      - apt 기능을 위한 리스트에 추가
+    $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+    $ sudo apt update
+      - apt 리스트에 도커를 다운로드 받기 위한 경로가 추가되었음
+    $ apt-chche policy docker-ce
+    $ sudo apt install docker-ce
+      - 도커는 설치되면 시스템 서비스로 등록이 된다.
+      - sudo systemctl status docker 로 확인
+  2) hello-world 실습
+    $ docker pull hello-world
+      - docker pull 특정한 서버 파일을 이미지 형태로 다운로드 한다
+    $ docker images // 설치된 도커 이미지 확인
+    $ docker run hello-world // hello-world 컨테이너 실행
+    $ docker ps -a  // 어떤 컨테이너가 동작하고있는지 확인
+    $ docker rm [컨테이너ID] // 컨테이너를 삭제 하더라고 이미지 파일은 남아있음
+  3) 도커파일 작성
+    $ cd /home/ubuntu
+    $ mkdir example
+    $ cd example
+    $ sudo vi Dockerfile // 도커파일의 이름은 항상 Dockerfile 고정이다
+    FROM ubuntu:18.04
+    MAINTAINER YoungChan Gwon <zave7@naver.com>
+    
+    RUN apt-get update // 컨테이너가 구동되면 실행
+    RUN apt-get install -y apache2 // 설치할때 용량이 크거나하면 설치를 할 것이냐 물어보는데 무조건 설치 한다는 옵션이다.
+    
+    EXPOSE 80 # Open HTTP Port
+    
+    CMD ["apachectl", "-D", "FOREGROUND"] // 컨테이너는 특정한 작업을 수행하자마자 곧바로종료되기때문에 아파치가 항상 실행되도록 데몬상태로 설정
+    $ wq!
+    
+  4) 도커 파일 빌드
+    $ docker build -t example .  // 도커파일의 태그 붙이기(이름)
+    ※ 빌드 실패시 오류 메세지 확인 후 해결
+    ※ 포트설정 부분에는 주석달면 안됨
+  5) 웹 서버 컨테이너 구동
+    $ docker run -p 80:80 example // 호스트 서버 포트:도커 컨테이너 포트
+    //TODO 현재 접속이 안되는중 원인 파악중
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
       
       
       
