@@ -37,10 +37,10 @@
       $ jupyter notebook --generate-config 
       $ sudo vi /home/ubuntu/.jupyter/jupyter_notebook_config.py
       - 최하단 이동
-      $ c = get_config()
-      $ c.NotebookApp.password = u'argon2:$argon2id$v=19$m=10240,t=10,p=8$c0UEVzkUKxl6s3l0Eaa6Uw$bWeeL1TDa/Nul0pp+AVuow'
-      $ c.NotebookApp.ip = '172.31.38.47' # 서버 내부 아이피 설정
-      $ c.NotebookApp.notebook_dir = '/'
+      c = get_config()
+      c.NotebookApp.password = u'argon2:$argon2id$v=19$m=10240,t=10,p=8$c0UEVzkUKxl6s3l0Eaa6Uw$bWeeL1TDa/Nul0pp+AVuow'
+      c.NotebookApp.ip = '172.31.38.47' # 서버 내부 아이피 설정
+      c.NotebookApp.notebook_dir = '/'
       $ wq!
     (2) 주피터 노트북 실행
       - sudo jupyter-notebook --allow-root
@@ -74,6 +74,7 @@
       $ ctrl + c 주피터 노트북 종료
       $ which jupyter-notebook 실행 파일 경로 찾기
       $ sudo vi /etc/systemd/system/jupyter.service 파일 작성
+      
       [Unit]
       Description=Jupyter Notebook Server
       
@@ -84,10 +85,12 @@
       
       [Install]
       WantedBy=multi-user.target
+      
       $ sudo systemctl daemon-reload
       $ sudo systemctl enable jupyter
       $ sudo systemctl start jupyter
       $ sudo systemctl status jupyter
+      
       ※ 재부팅 후 한 30초 정도면 올라옴
 3.Docker 설치
   1) 설치
@@ -119,6 +122,7 @@
     $ mkdir example
     $ cd example
     $ sudo vi Dockerfile // 도커파일의 이름은 항상 Dockerfile 고정이다
+    
     FROM ubuntu:18.04
     MAINTAINER YoungChan Gwon <zave7@naver.com>
     
@@ -128,8 +132,8 @@
     EXPOSE 80 # Open HTTP Port
     
     CMD ["apachectl", "-D", "FOREGROUND"] // 컨테이너는 특정한 작업을 수행하자마자 곧바로종료되기때문에 아파치가 항상 실행되도록 데몬상태로 설정
-    $ wq!
     
+    $ wq!
   4) 도커 파일 빌드
     $ docker build -t example .  // 도커파일의 태그 붙이기(이름)
     ※ 빌드 실패시 오류 메세지 확인 후 해결
