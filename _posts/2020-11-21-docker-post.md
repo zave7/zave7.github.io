@@ -40,6 +40,7 @@ categories: operation
       - exit() 로 나가기
   5. 외부에서 접속 했을때 패스워드 입력 후 접속가능하게 하기위해 주피터 노트북 환경 설정
     (1) 환경 설정 파일 생성
+    ```
       $ jupyter notebook --generate-config 
       $ sudo vi /home/ubuntu/.jupyter/jupyter_notebook_config.py
       - 최하단 이동
@@ -48,13 +49,17 @@ categories: operation
       c.NotebookApp.ip = '172.31.38.47' # 서버 내부 아이피 설정
       c.NotebookApp.notebook_dir = '/'
       $ wq!
+    ```
     (2) 주피터 노트북 실행
+    ```
       - sudo jupyter-notebook --allow-root
+    ```
       ※ 기본적으로 8888 포트로 열림
       - EC2 인스턴스에서 보안 > 보안그룹 > 인바운드 규칙 편집 0.0.0.0/0 으로 설정
     (3) 인스턴스 ip로 8888 포트 접속
       - 주피터 노트북 접속
     (4) 주피터 노트북 항상 실행 설정
+    ```
       $ ctrl + z 로 주피터 노트북 종료
       $ bg # 백그라운드 상태에서 돌아가도록 실행
       $ disown -h # 주피터 노트북에대한 소유권 포기
@@ -63,7 +68,9 @@ categories: operation
       - 실행중인 포트로 찾아 주피터노트북 종료
       $ sudo netstat -nap | grep 8888
       $ sudo kill -9 [pid]
+    ```
     (5) SSL 적용
+    ```
       $ cd /home/ubuntu
       $ mkdir ssl
       $ cd ssl
@@ -76,11 +83,13 @@ categories: operation
       c.NotebookApp.keyfile = u'/home/ubuntu/ssl/cert.key'
       $ sudo jupyter-notebook --allow-root # 다시실행하면 https 로 적용되어 실행되는것을 확인할 수 있다.
       // 사설 인증서이기 때문에 웹브라우져에서 신뢰하지 못하기 때문에 경고 표시를 함
+    ```
     (6) 주피터 노트북을 시스템 서비스에 등록
+    ```
       $ ctrl + c 주피터 노트북 종료
       $ which jupyter-notebook 실행 파일 경로 찾기
       $ sudo vi /etc/systemd/system/jupyter.service 파일 작성
-      
+
       [Unit]
       Description=Jupyter Notebook Server
       
@@ -96,10 +105,11 @@ categories: operation
       $ sudo systemctl enable jupyter
       $ sudo systemctl start jupyter
       $ sudo systemctl status jupyter
-      
+    ```
       ※ 재부팅 후 한 30초 정도면 올라옴
 # 3. Docker 설치
   1. 설치
+    ```
     $ sudo apt-get update
     $ sudo apt install apt-transport-https
     $ sudo apt install ca-certificates
@@ -116,6 +126,7 @@ categories: operation
     $ sudo apt install docker-ce
       - 도커는 설치되면 시스템 서비스로 등록이 된다.
       - sudo systemctl status docker 로 확인
+    ```
   2. hello-world 실습
     $ docker pull hello-world
       - docker pull 특정한 서버 파일을 이미지 형태로 다운로드 한다
