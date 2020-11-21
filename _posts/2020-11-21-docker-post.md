@@ -4,7 +4,7 @@ date: 2020-11-21 22:28:00
 categories: operation
 ---
 
-1. AWS EC2 인스턴스 생성 ( ubuntu )
+# AWS EC2 인스턴스 생성 ( ubuntu )
   1) 접속 : https://ap-northeast-2.console.aws.amazon.com/console/home?nc2=h_ct&region=ap-northeast-2&src=header-signin
   2) EC2 검색
   3) 인스턴스 시작 클릭
@@ -22,7 +22,7 @@ categories: operation
     (2) 인스턴스 연결 버튼 누른 후 ssh 명령 복사
     (3) cmd에서 명령 실행
     (4) aws 인스턴스 접속 성공
-2. GUI 환경 구축 ( jupiter notebook )
+# GUI 환경 구축 ( jupiter notebook )
   1) apt-get 명령어로 주피터 노트북 설치
     - sudo apt-get update
     ※ 우분투 18.04 버전에는 기본적으로 파이썬3가 설치되어있음
@@ -98,7 +98,7 @@ categories: operation
       $ sudo systemctl status jupyter
       
       ※ 재부팅 후 한 30초 정도면 올라옴
-3.Docker 설치
+# Docker 설치
   1) 설치
     $ sudo apt-get update
     $ sudo apt install apt-transport-https
