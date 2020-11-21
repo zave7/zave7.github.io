@@ -5,40 +5,40 @@ categories: operation
 ---
 
 # 1. AWS EC2 인스턴스 생성 ( ubuntu )
-  1) 접속 : https://ap-northeast-2.console.aws.amazon.com/console/home?nc2=h_ct&region=ap-northeast-2&src=header-signin
-  2) EC2 검색
-  3) 인스턴스 시작 클릭
-  4) 운영체제 선택 > 검토 및 시작 > 시작하기
-  5) 키페어 생성
+  1. 접속 : https://ap-northeast-2.console.aws.amazon.com/console/home?nc2=h_ct&region=ap-northeast-2&src=header-signin
+  2. EC2 검색
+  3. 인스턴스 시작 클릭
+  4. 운영체제 선택 > 검토 및 시작 > 시작하기
+  5. 키페어 생성
     ※ 서버 접속을 위한 보안용 키
       - 유츌 되지 않도록 중요하게 관리
     (1) 새 키페어 생성 선택 > 키 페어 이름 작성 후 키페어 다운로드 > 인스턴스 시작
     (2) 키 보안설정(권한) - 일반 유저는 사용할 수 없도록
       - 리눅스 : chmod 400 권한 설정
       - 윈도우 : 속성에서 관리자 권한만 설정
-  6) 인스턴스 보기
-  7) cmd에서 ssh로 접속해보기
+  6. 인스턴스 보기
+  7. cmd에서 ssh로 접속해보기
     (1) 관리자 권한으로 cmd 실행
     (2) 인스턴스 연결 버튼 누른 후 ssh 명령 복사
     (3) cmd에서 명령 실행
     (4) aws 인스턴스 접속 성공
 # 2. GUI 환경 구축 ( jupiter notebook )
-  1) apt-get 명령어로 주피터 노트북 설치
+  1. apt-get 명령어로 주피터 노트북 설치
     - sudo apt-get update
     ※ 우분투 18.04 버전에는 기본적으로 파이썬3가 설치되어있음
-  2) 파이썬 관련 패키지를 설치할 수 있도록 도와주는 pip 파이프 설치
+  2. 파이썬 관련 패키지를 설치할 수 있도록 도와주는 pip 파이프 설치
     - sudo apt-get install python3-pip
-  3) 주피터 노트북 설치
+  3. 주피터 노트북 설치
     - sudo pip3 install notebook
     ※ 이제 서버 외부에서 웹브라우져를 통해 접속 가능
-  4) 주피터 노트북 암호 설정
+  4. 주피터 노트북 암호 설정
     - 기본적으로 주피터 노트북은 sha-1 해시 패스워드 관리
     (1) 파이썬으로 패스워드 설정
       - from notebook.auth import passwd
       - passwd()
       - 비밀번호 해시 값 저장
       - exit() 로 나가기
-  5) 외부에서 접속 했을때 패스워드 입력 후 접속가능하게 하기위해 주피터 노트북 환경 설정
+  5. 외부에서 접속 했을때 패스워드 입력 후 접속가능하게 하기위해 주피터 노트북 환경 설정
     (1) 환경 설정 파일 생성
       $ jupyter notebook --generate-config 
       $ sudo vi /home/ubuntu/.jupyter/jupyter_notebook_config.py
@@ -99,7 +99,7 @@ categories: operation
       
       ※ 재부팅 후 한 30초 정도면 올라옴
 # 3. Docker 설치
-  1) 설치
+  1. 설치
     $ sudo apt-get update
     $ sudo apt install apt-transport-https
     $ sudo apt install ca-certificates
@@ -116,14 +116,14 @@ categories: operation
     $ sudo apt install docker-ce
       - 도커는 설치되면 시스템 서비스로 등록이 된다.
       - sudo systemctl status docker 로 확인
-  2) hello-world 실습
+  2. hello-world 실습
     $ docker pull hello-world
       - docker pull 특정한 서버 파일을 이미지 형태로 다운로드 한다
     $ docker images // 설치된 도커 이미지 확인
     $ docker run hello-world // hello-world 컨테이너 실행
     $ docker ps -a  // 어떤 컨테이너가 동작하고있는지 확인
     $ docker rm [컨테이너ID] // 컨테이너를 삭제 하더라고 이미지 파일은 남아있음
-  3) 도커파일 작성
+  3. 도커파일 작성
     $ cd /home/ubuntu
     $ mkdir example
     $ cd example
@@ -140,11 +140,11 @@ categories: operation
     CMD ["apachectl", "-D", "FOREGROUND"] // 컨테이너는 특정한 작업을 수행하자마자 곧바로종료되기때문에 아파치가 항상 실행되도록 데몬상태로 설정
     
     $ wq!
-  4) 도커 파일 빌드
+  4. 도커 파일 빌드
     $ docker build -t example .  // 도커파일의 태그 붙이기(이름)
     ※ 빌드 실패시 오류 메세지 확인 후 해결
     ※ 포트설정 부분에는 주석달면 안됨
-  5) 웹 서버 컨테이너 구동
+  5. 웹 서버 컨테이너 구동
     $ docker run -p 80:80 example // 호스트 서버 포트:도커 컨테이너 포트
     //TODO 현재 접속이 안되는중 원인 파악중
             
