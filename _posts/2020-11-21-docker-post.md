@@ -68,14 +68,14 @@ categories: operation
       $ mkdir ssl
       $ cd ssl
       $ sudo openssl req -x509 -nodes -days 365 -newkey rsa:1024 -keyout "cert.key" -out "cert.pem" -batch
-      # 공개키 기반 구조의 기반에 입각함
-      # keyout 은 개인키, out은 공개키
-      # 주피터 노트북 설정파일에 ssl 설정 추가
+      // 공개키 기반 구조의 기반에 입각함
+      // keyout 은 개인키, out은 공개키
+      // 주피터 노트북 설정파일에 ssl 설정 추가
       $ sudo vi /home/ubuntu/.jupyter/jupyter_notebook_config.py
       c.NotebookApp.certfile = u'/home/ubuntu/ssl/cert.pem'
       c.NotebookApp.keyfile = u'/home/ubuntu/ssl/cert.key'
       $ sudo jupyter-notebook --allow-root # 다시실행하면 https 로 적용되어 실행되는것을 확인할 수 있다.
-      # 사설 인증서이기 때문에 웹브라우져에서 신뢰하지 못하기 때문에 경고 표시를 함
+      // 사설 인증서이기 때문에 웹브라우져에서 신뢰하지 못하기 때문에 경고 표시를 함
     (6) 주피터 노트북을 시스템 서비스에 등록
       $ ctrl + c 주피터 노트북 종료
       $ which jupyter-notebook 실행 파일 경로 찾기
