@@ -1,5 +1,5 @@
 ---
-title: "블로그 포스팅 테스트021"
+title: "테스트"
 date: 2020-09-02 18:00:00 -0400
 categories: jekyll update
 ---
