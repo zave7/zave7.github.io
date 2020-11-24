@@ -279,3 +279,10 @@ defaults:
       comments: true
       share: true
       related: true
+  - scope:
+      path: "projects"
+      type: "pages"
+    values:
+      layout: "project"
+      author: "Mr. Hyde"
+      category: "project"
