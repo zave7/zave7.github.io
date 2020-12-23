@@ -2,16 +2,16 @@
 ===================
 
 ### 각 방언 후속 버전은 이전 방언 버전의 설정을 상속한다. 따라서 MariaDB의 상속 계층은 다음과 같다.
-```
+
 > MariaDB103Dialect 
 >   > MariaDB102Dialect 
 >   >   > MariaDB10Dialect 
 >   >   >   > MariaDB53Dialect 
->   >   >   > MariaDBDialect 
->   >   >   >   > MySQL5Dialect 
->   >   >   >   >   > MySQLDialect 
->   >   >   >   >   >   > Dialect
-```
+>   >   >   >   >MariaDBDialect 
+>   >   >   >   >   >MySQL5Dialect 
+>   >   >   >   >   >   >MySQLDialect 
+>   >   >   >   >   >   >   >Dialect
+
 ***
 ### 버전별 방언
 * MariaDB102Dialect for   : MariaDB server 10.2
