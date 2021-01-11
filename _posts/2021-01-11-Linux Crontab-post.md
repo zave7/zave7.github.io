@@ -1,6 +1,6 @@
 # Linux Crontab
 
-### cron 표현식
+### # cron 표현식
 
   - 1분 마다 실행
   ```
@@ -25,7 +25,7 @@
   
 
 
-### crontab 명령어
+### # crontab 명령어
   - 명령을 등록, 편집 ( 맨 처음 사용시 편집기 선택 )
   ```
   $ crontab -e
