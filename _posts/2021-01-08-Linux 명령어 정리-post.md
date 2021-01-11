@@ -13,9 +13,6 @@
   ```
   $ find `pwd` -maxdepth 1 ! -path `pwd` -type d
   ```
-  ```
-  $ find `pwd` -maxdepth 1 ! -path `pwd` -type d
-  ```
 
 ## wc *사용자가 지정한 파일의 행, 단어, 문자수를 세는 프로그램*
 - 파일의 문자 갯수 세기
