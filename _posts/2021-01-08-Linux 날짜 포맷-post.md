@@ -1,3 +1,8 @@
+---
+title: "Linux Date Format"
+categories: Linux
+---
+
 # 리눅스 날짜 포맷 지정 출력
 
 ## ※ 표기
