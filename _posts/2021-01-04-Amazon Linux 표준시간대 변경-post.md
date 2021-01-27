@@ -1,3 +1,8 @@
+---
+title: "AWS EC2 표준 시간대 변경"
+categories: AWS
+---
+
 # Amazon Linux에서 표준 시간대 변경
 
 1. 인스턴스에서 사용할 표준 시간대 식별 (/usr/share/zoneinfo)
