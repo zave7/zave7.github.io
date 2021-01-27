@@ -1,3 +1,8 @@
+---
+title: "Docker Spring Profile 적용"
+categories: Docker
+---
+
 # 도커 컨테이너 실행 시 스프링부트 profile 적용
 
 1. dockerfile에 ENTRYPOINT 설정
