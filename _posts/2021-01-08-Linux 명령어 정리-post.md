@@ -1,3 +1,8 @@
+---
+title: "Linux Command"
+categories: Linux
+---
+
 # 리눅스 명령어
 
 ## - find *찾기*
