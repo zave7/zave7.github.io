@@ -1,3 +1,8 @@
+---
+title: "Software Life Cycle"
+categories: Software
+---
+
 # 소프트웨어 생명 주기 (Software Life Cycle)
   - 소프트웨어 생명 주기는 소프트웨어 개발 방법론의 바탕이 되는 것으로, 소프트웨어를 개발하기 위해 정ㅇ의하고 운용, 유지보수 등의 과정을 각 단계별로 나눈 것이다.
   
