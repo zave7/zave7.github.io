@@ -1,3 +1,8 @@
+---
+title: "Amazon Linux"
+categories: AWS
+---
+
 1. 시간대 수정
   1) 인스턴스에서 사용할 표준 시간대를 식별
     $ ls /usr/share/zoneinfo
