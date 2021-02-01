@@ -41,7 +41,7 @@ public class ParameterizedTest {
     }
 }
 ```
-  1. 테스트 클래스에는 반드시 @RunWith 어노테이션을 부여해야하ㅕㅁ, 그 파라미터로는 Parameterized 클래스를 사용한다.
+  1. 테스트 클래스에는 반드시 @RunWith 어노테이션을 부여해야하며, 그 파라미터로는 Parameterized 클래스를 사용한다.
   2. 테스트에 사용될 값을 인스턴스 변수로 선언하고
   3. @Parameters 라 표시도니 메서드가 하나 필요하다.
   4. 위 예제에서는 getTestParameters 메서드가 여기에 해당된다. 이 메서드의 시그니쳐는 반드시 @Parameters public staic java.util.Collection 이어야 하며,
