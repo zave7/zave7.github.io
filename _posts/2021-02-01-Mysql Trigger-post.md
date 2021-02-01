@@ -3,7 +3,7 @@ title: "MariaDB Trigger"
 categories: DB
 ---
 
-# Mysql Trigger
+# MariaDB Trigger
 
 ## INSERT
 ```
