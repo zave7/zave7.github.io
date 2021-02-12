@@ -1,4 +1,4 @@
-# Invalid Gradle JDK configuration found 오류
+# "Invalid Gradle JDK configuration found" 오류
 
 ## 문제
   - get from vcs 로 받아온 프로젝트를 실행시켰을때 발생하였다
