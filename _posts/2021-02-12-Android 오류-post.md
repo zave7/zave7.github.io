@@ -1,3 +1,8 @@
+---
+title: "Android 오류"
+categories: Android
+---
+
 # "Invalid Gradle JDK configuration found" 오류
 
 ## 문제
