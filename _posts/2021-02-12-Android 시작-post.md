@@ -16,3 +16,5 @@ categories: Android
   - 기본적으로 constraint layout을 사용한다.
   - 부득이한 경우가 아니면 리니어 레이아웃과 relative 레이아웃을 사용하지 않는다.
   
+### 이미지 경로
+  - app\src\main\res\drawable
