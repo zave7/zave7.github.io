@@ -9,5 +9,5 @@
   2. Releases 에서 최신 버전 zip 파일 다운로드
   3. 압축 해제 후 관리자 권한으로 명령 프롬프트 실행
   4. 모듈 내에 있는 silent_install.bat 실행
-  5. 결과
-    ![GitHub Logo](/images/android/gvm_emulator.png){: width="50%" height="50%"}
+  5. 결과  
+    ![GitHub Logo](/images/android/gvm_emulator.png){: width="100%" height="100%"}
