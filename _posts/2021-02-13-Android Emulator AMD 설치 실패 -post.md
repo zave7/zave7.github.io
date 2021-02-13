@@ -1,3 +1,8 @@
+---
+title: "Android Emulator AMD 설치 실패"
+categories: Android
+---
+
 # Android Emulator AMD 설치 실패
 
 ## 원인
