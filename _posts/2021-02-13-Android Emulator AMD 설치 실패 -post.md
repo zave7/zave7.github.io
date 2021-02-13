@@ -10,5 +10,5 @@
   3. 압축 해제 후 관리자 권한으로 명령 프롬프트 실행
   4. 모듈 내에 있는 silent_install.bat 실행
   5. 결과  
-    - 상태에서 4 RUNNING 이 나와야 한다.  
+      - 상태에서 4 RUNNING 이 나와야 한다.  
     ![GitHub Logo](/images/android/gvm_emulator.png){: width="100%" height="100%"}
