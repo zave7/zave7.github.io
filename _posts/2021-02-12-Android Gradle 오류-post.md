@@ -1,5 +1,5 @@
 ---
-title: "Android 오류"
+title: "Android Gradle 오류"
 categories: Android
 ---
 
