@@ -1,3 +1,8 @@
+---
+title: "Attempt to recreate a file for type 에러"
+category: querydsl
+---
+
 # querydsl Attempt to recreate a file for type 에러
 
 ## 해결 방법
