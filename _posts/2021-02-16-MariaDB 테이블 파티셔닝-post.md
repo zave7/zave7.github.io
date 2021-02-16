@@ -53,9 +53,9 @@ categories: DB
   ```
 ### 파티션 제거
   1. 파티션 별 제거
-	```
-	ALTER TABLE table_name DROP PARTITION p2021;
-	```
+      ```
+      ALTER TABLE table_name DROP PARTITION p2021
+      ```
   2. 모든 파티션 제거
     - 파티션이 하나 남았을때는 무조건 REMOVE 로 파티션 자체를 지워야 한다.
 	    ```
