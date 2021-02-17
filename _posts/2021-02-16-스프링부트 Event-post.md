@@ -6,13 +6,13 @@ categories: springboot
 # Event
 
 ## 스프링 4.2 이상
-  1. 스프링 4.2 이상 버전에서는 ApplicationEvent, ApplicationListener 를 구현할 필요가 없다.(이전 버전에서는 구현해야함)
-  2. ApplicationEventPublisher 에서 이벤트를 발행한다.
+  - 스프링 4.2 이상 버전에서는 ApplicationEvent, ApplicationListener 를 구현할 필요가 없다.(이전 버전에서는 구현해야함)
+  - ApplicationEventPublisher 에서 이벤트를 발행한다.
   
 ### ApplicationEvent
-  1. 이벤트 클래스를 생성한다. (ApplicationEvent 을 상속받지 않아도 된다.)
-  2. 이벤트 리스너가 수행할 이벤트 대상 클래스이다.
-  3. 보통 getter 만으로 충분하다.
+  - 이벤트 클래스를 생성한다. (ApplicationEvent 을 상속받지 않아도 된다.)
+  - 이벤트 리스너가 수행할 이벤트 대상 클래스이다.
+  - 보통 getter 만으로 충분하다.
       ```
         @Getter
         public class CredentialRequestEvent {
@@ -28,11 +28,11 @@ categories: springboot
       ```
 
 ### ApplicationListener
-  1. 이벤트 객체를 받아 이벤트를 실행하는 주체이다. (ApplicationListener<E> 를 구현하지 않아도 된다.)
-  2. 이벤트 리스너는 실행해야할 service 객체에 의존한다.
-  3. 이벤트 리스너 메서드에 @EventListener 어노테이션을 선언하고 파라미터로 해당 이벤트 객체를 받도록 작성해놓으면 된다.
-  4. @Order 어노테이션으로 이벤트 큐의 실행 순서를 지정할 수 있다.
-  5. @Async 어노테이션으로 비동기 실행을 설정할 수 있다.
+  - 이벤트 객체를 받아 이벤트를 실행하는 주체이다. (ApplicationListener<E> 를 구현하지 않아도 된다.)
+  - 이벤트 리스너는 실행해야할 service 객체에 의존한다.
+  - 이벤트 리스너 메서드에 @EventListener 어노테이션을 선언하고 파라미터로 해당 이벤트 객체를 받도록 작성해놓으면 된다.
+  - @Order 어노테이션으로 이벤트 큐의 실행 순서를 지정할 수 있다.
+  - @Async 어노테이션으로 비동기 실행을 설정할 수 있다.
       ```
         @Component
         @RequiredArgsConstructor
@@ -76,3 +76,7 @@ categories: springboot
 ### @EnableAsync
   - 스프링부트 Application 클래스에 @EnableAsync 어노테이션을 선언하면 비동기 기능을 활성화 시킨다.
   - 이벤트 리스너 메서드에 선언 할 경우 비동기로 실행된다. (별개의 스레드에서 동작)
+
+### 참조
+  - https://brunch.co.kr/@springboot/422
+  - https://velog.io/@ljinsk3/Spring-Events
