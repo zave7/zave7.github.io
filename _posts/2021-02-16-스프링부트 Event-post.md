@@ -34,6 +34,7 @@ categories: springboot
   - @Order 어노테이션으로 이벤트 큐의 실행 순서를 지정할 수 있다.
   - @Async 어노테이션으로 비동기 실행을 설정할 수 있다.
       ```
+  
         @Component
         @RequiredArgsConstructor
         public class CredentialRequestHandler {
