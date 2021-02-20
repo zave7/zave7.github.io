@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "air" # "neon", "sunrise", "default", "aqua", "contra
 
 # Site Settings
 locale                   : "en-US"
-title                    : "zave's GitHub"
+title                    : "zave's GitBlog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "zave"
