@@ -61,3 +61,21 @@ categories: Linux
   $ more file.txt
   ```
   
+## - 메모리 사용량 순 프로세스 보기
+  1. RSS(Resident set size) : 물리 메모리를 실제 점유하고 있는 크기
+  - 간단히 보기
+  ```
+  $ ps -ef --sort -rss
+  ```
+  - 상위 10개
+  ```
+  ps -ef --sort -rss | head -n 11
+  ```
+  - 메모리 사용량 표시 (Kb)
+  ```
+  $ ps -eo user,pid,ppid,rss,size,vsize,pmem,pcpu,time,cmd --sort -rss | head -n 11
+  ```
+  - 명령 인수 숨기기 ( cmd -> comm )
+  ```
+  $ ps -eo user,pid,ppid,rss,size,vsize,pmem,pcpu,time,comm --sort -rss | head -n 11
+  ```
