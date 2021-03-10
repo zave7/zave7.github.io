@@ -3,8 +3,6 @@ title: initializationError FAILED
 categories: springboot
 ---
 
-# 스프링부트 initializationError FAILED
-
 ## 문제
   - jar build 시 initializationError FAILED 에러가 발생하면서 실패했다.
 
