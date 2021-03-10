@@ -17,10 +17,10 @@ minimal_mistakes_skin    : "air" # "neon", "sunrise", "default", "aqua", "contra
 
 # Site Settings
 locale                   : "en-US"
-title                    : "zave's GitBlog"
+title                    : "Chan.e's GitBlog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "zave"
+name                     : "Chan.e"
 description              : "An amazing website."
 url                      : "https://github.com/zave7" # "https://zave7.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
