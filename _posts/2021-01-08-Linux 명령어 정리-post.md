@@ -79,3 +79,21 @@ categories: Linux
   ```
   $ ps -eo user,pid,ppid,rss,size,vsize,pmem,pcpu,time,comm --sort -rss | head -n 11
   ```
+
+## - 디렉토리 용량 확인
+  1. 용량 단위 (KByte)
+  - 특정 디렉토리 및 하위 디렉토리 용량 확인
+  ```
+  $ du .
+  $ du ./test/
+  ```
+  - 특정 디렉토리 용량만 확인
+  ```
+  $ du -s .
+  $ du -s ./test/
+  # 용량 조회 편하게
+  $ du -sh .
+  $ du -sh ./test/
+  ```
+  
+  
