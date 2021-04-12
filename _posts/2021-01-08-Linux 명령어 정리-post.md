@@ -103,4 +103,28 @@ categories: Linux
     $ du -sh ./test/
     ```
   
-  
+## - logrotate
+  - logrotate 를 이용한 로그 로테이터 설정 (예시: docker)
+    ```
+    $ vi /etc/logrotate.d/docker
+    ```
+    ```
+    /var/lib/docker/containers/*/*.log {
+        rotate 7
+        daily
+        compress
+        missingok
+        copytruncate
+    }
+    ```
+    - 리눅스 loglrotate 작성 방법
+        - rotate : 최대 파일 보관 갯수 (ex. log.1, log.3, log.2 ...)
+        - daily : 로그 회전 주기 (yearly=매년, monthly=매월, weekly=매주, daily=매일)
+        - compress : 로그 파일 압축
+        - size=1M : 크기가 1메가 바이트를 넘으면 실행
+        - missingok : 각 로테이션에 해당하는 로그 파일이 없을 경우 에러메세지를 출력하고 다음으로 실행
+        - copyturncate : 복사본을 만들고 크기를 0으로 설정
+    - 바로 실행
+        ```
+        $ sudo logrotate -fv /etc/logrotate.d/docker
+        ```  
