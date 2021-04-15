@@ -280,6 +280,7 @@ defaults:
       comments: true
       share: true
       related: true
+      sidebar_main: true
   - scope:
       path: "projects"
       type: "pages"
