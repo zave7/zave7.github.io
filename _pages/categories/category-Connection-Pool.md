@@ -1,7 +1,7 @@
 ---
 title: "Connection-Pool"
 layout: archive
-permalink: categories/connection-Pool
+permalink: categories/connection-pool
 author_profile: true
 sidebar_main: true
 ---

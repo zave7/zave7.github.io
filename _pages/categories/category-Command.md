@@ -1,10 +1,10 @@
 ---
 title: "Linux"
 layout: archive
-permalink: categories/linux
+permalink: categories/command
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.linux %}
+{% assign posts = site.categories.Command %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
