@@ -1,10 +1,10 @@
 ---
-title: "Android 프로그래밍"
+title: "Connection-Pool"
 layout: archive
-permalink: categories/android
+permalink: categories/connection-Pool
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.Android %}
+{% assign posts = site.categories.Connection-Pool %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}
