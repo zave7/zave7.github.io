@@ -1,6 +1,6 @@
 ---
 title: "Connection Pool"
-categories: DB
+categories: Connection-Pool
 ---
 
 # 커넥션 풀 계산

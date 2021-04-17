@@ -1,6 +1,6 @@
 ---
 title: "Linux Date Format"
-categories: Linux
+categories: Command
 ---
 
 # 리눅스 날짜 포맷 지정 출력

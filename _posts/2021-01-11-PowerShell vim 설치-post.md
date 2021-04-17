@@ -1,3 +1,8 @@
+---
+title: "Window vim"
+categories: Tool
+---
+
 # PowerShell vim 설치
 
 ## Choco

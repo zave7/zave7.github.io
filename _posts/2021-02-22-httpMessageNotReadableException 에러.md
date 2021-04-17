@@ -1,6 +1,6 @@
 ---
 title: httpMessageNotReadableException 에러
-categories: springboot
+categories: Springboot
 ---
 
 ## 원인

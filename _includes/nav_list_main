@@ -10,7 +10,7 @@
       </li>
       <li>
         <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-        <span class="nav__sub-title">android</span>
+        <span class="nav__sub-title">Android</span>
             <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
             <ul>
                 <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
@@ -18,6 +18,124 @@
                 {% for category in site.categories %}
                     {% if category[0] == "android" %}
                         <li><a href="/categories/android" class="">Android ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+      <li>
+        <span class="nav__sub-title">Cloud</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "AWS" %}
+                        <li><a href="/categories/aws" class="">AWS ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+      <li>
+        <span class="nav__sub-title">Database</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Connection-Pool" %}
+                        <li><a href="/categories/aws" class="">Connection-Pool ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "MariaDB" %}
+                        <li><a href="/categories/aws" class="">MariaDB ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+      <li>
+        <span class="nav__sub-title">Web_Framework</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Springboot" %}
+                        <li><a href="/categories/aws" class="">Springboot ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+      <li>
+        <span class="nav__sub-title">JPA</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Hibernate" %}
+                        <li><a href="/categories/aws" class="">Hibernate ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Querydsl" %}
+                        <li><a href="/categories/aws" class="">Querydsl ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+      <li>
+        <span class="nav__sub-title">Container</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Docker" %}
+                        <li><a href="/categories/aws" class="">Docker ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+      <li>
+        <span class="nav__sub-title">Linux</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Command" %}
+                        <li><a href="/categories/aws" class="">Command ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Crontab" %}
+                        <li><a href="/categories/aws" class="">Crontab ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Timestamp" %}
+                        <li><a href="/categories/aws" class="">Timestamp ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+      <li>
+        <span class="nav__sub-title">Software</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Software" %}
+                        <li><a href="/categories/aws" class="">Software ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+      <li>
+        <span class="nav__sub-title">Test</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "JUnit" %}
+                        <li><a href="/categories/aws" class="">JUnit ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+      </li>
+      <li>
+        <span class="nav__sub-title">Window</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Tool" %}
+                        <li><a href="/categories/aws" class="">Tool ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

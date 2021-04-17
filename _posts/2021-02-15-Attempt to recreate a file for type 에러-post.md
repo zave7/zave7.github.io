@@ -1,6 +1,6 @@
 ---
 title: "Attempt to recreate a file for type 에러"
-categories: querydsl
+categories: Querydsl
 ---
 
 # querydsl Attempt to recreate a file for type 에러

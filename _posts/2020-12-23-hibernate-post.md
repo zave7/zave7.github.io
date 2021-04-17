@@ -1,6 +1,6 @@
 ---
 title: "Hibernate Dialect"
-categories: JPA
+categories: Hibernate
 ---
 
 하이버네이트 방언 설정

@@ -1,6 +1,6 @@
 ---
 title: No property [methodName] found for type [Entity]! 익셉션 발생
-categories: querydsl
+categories: Querydsl
 ---
 
 ## - 문제

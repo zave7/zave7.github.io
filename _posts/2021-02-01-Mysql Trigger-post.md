@@ -1,6 +1,6 @@
 ---
 title: "MariaDB Trigger"
-categories: DB
+categories: MariaDB
 ---
 
 # MariaDB Trigger

@@ -1,6 +1,6 @@
 ---
 title: "JUnit"
-categories: Test
+categories: JUnit
 ---
 
 # JUit

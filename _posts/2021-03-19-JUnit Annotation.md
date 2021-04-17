@@ -1,6 +1,6 @@
 ---
 title: JUnit5 Annotation
-categories: junit
+categories: JUnit
 ---
 
 # 어노테이션 정리

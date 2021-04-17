@@ -1,6 +1,6 @@
 ---
 title: "Linux Command"
-categories: Linux
+categories: Command
 ---
 
 # 리눅스 명령어

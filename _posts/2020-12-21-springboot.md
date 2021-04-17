@@ -1,6 +1,6 @@
 ---
 title: "Springboot"
-categories: Srping
+categories: Springboot
 ---
 
 # thread max

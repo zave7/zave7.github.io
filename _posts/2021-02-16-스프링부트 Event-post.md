@@ -1,6 +1,6 @@
 ---
 title: 스프링부트 트랜잭션 분리
-categories: springboot
+categories: Springboot
 ---
 
 # Event

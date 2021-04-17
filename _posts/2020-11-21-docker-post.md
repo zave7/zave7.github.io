@@ -1,7 +1,7 @@
 ---
 title: "Docker 실습"
 date: 2020-11-21 22:28:00
-categories: operation
+categories: AWS
 ---
 
 # 1. AWS EC2 인스턴스 생성 ( ubuntu )

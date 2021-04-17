@@ -1,6 +1,6 @@
 ---
 title: initializationError FAILED
-categories: springboot
+categories: Springboot
 ---
 
 ## 문제

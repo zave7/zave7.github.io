@@ -1,6 +1,6 @@
 ---
 title: 도커 로그
-categories: docker
+categories: Docker
 ---
 # - Docker Log
 - 별다른 설정을 하지 않았을 경우 컨테이너의 표준 출력 로그 아래와 같은 경로에 쌓이게 된다

@@ -1,3 +1,8 @@
+---
+title: "JPA fetch size"
+categories: Hibernate
+---
+
 # JPA fetch size
 
 ## # default_batch_fetch_size 옵션

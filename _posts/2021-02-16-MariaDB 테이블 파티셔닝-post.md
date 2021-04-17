@@ -1,6 +1,6 @@
 ---
 title: MariaDB 테이블 파티셔닝
-categories: DB
+categories: MariaDB
 ---
 
 # 파티셔닝에서 사용할 수 있는 함수

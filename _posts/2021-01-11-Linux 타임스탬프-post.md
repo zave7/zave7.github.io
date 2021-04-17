@@ -1,3 +1,8 @@
+---
+title: "Linux 타임 스탬프"
+categories: Timestamp
+---
+
 # Linux 타임 스탬프
 
 ## 타임 스탬프 종류
