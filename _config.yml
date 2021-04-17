@@ -280,10 +280,10 @@ defaults:
       share: true
       related: true
       sidebar_main: true
-  - scope:
-      path: "projects"
-      type: "pages"
-    values:
-      layout: "project"
-      author: "Mr. Hyde"
-      category: "project"
+  # - scope:
+  #     path: "projects"
+  #     type: "pages"
+  #   values:
+  #     layout: "project"
+  #     author: "Mr. Hyde"
+  #     category: "project"

@@ -37,14 +37,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Connection-Pool" %}
-                        <li><a href="/categories/aws" class="">Connection-Pool ({{category[1].size}})</a></li>
+                        <li><a href="/categories/connection-pool" class="">Connection-Pool ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "MariaDB" %}
-                        <li><a href="/categories/aws" class="">MariaDB ({{category[1].size}})</a></li>
+                        <li><a href="/categories/mariadb" class="">MariaDB ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -54,7 +54,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Springboot" %}
-                        <li><a href="/categories/aws" class="">Springboot ({{category[1].size}})</a></li>
+                        <li><a href="/categories/springboot" class="">Springboot ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -64,14 +64,14 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Hibernate" %}
-                        <li><a href="/categories/aws" class="">Hibernate ({{category[1].size}})</a></li>
+                        <li><a href="/categories/hibernate" class="">Hibernate ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Querydsl" %}
-                        <li><a href="/categories/aws" class="">Querydsl ({{category[1].size}})</a></li>
+                        <li><a href="/categories/querydsl" class="">Querydsl ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -81,7 +81,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Docker" %}
-                        <li><a href="/categories/aws" class="">Docker ({{category[1].size}})</a></li>
+                        <li><a href="/categories/docker" class="">Docker ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -91,21 +91,21 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Command" %}
-                        <li><a href="/categories/aws" class="">Command ({{category[1].size}})</a></li>
+                        <li><a href="/categories/command" class="">Command ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Crontab" %}
-                        <li><a href="/categories/aws" class="">Crontab ({{category[1].size}})</a></li>
+                        <li><a href="/categories/crontab" class="">Crontab ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Timestamp" %}
-                        <li><a href="/categories/aws" class="">Timestamp ({{category[1].size}})</a></li>
+                        <li><a href="/categories/timestamp" class="">Timestamp ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -115,7 +115,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Software" %}
-                        <li><a href="/categories/aws" class="">Software ({{category[1].size}})</a></li>
+                        <li><a href="/categories/software" class="">Software ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -125,17 +125,17 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "JUnit" %}
-                        <li><a href="/categories/aws" class="">JUnit ({{category[1].size}})</a></li>
+                        <li><a href="/categories/junit" class="">JUnit ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
       </li>
       <li>
-        <span class="nav__sub-title">Window</span>
+        <span class="nav__sub-title">Windows</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Tool" %}
-                        <li><a href="/categories/aws" class="">Tool ({{category[1].size}})</a></li>
+                    {% if category[0] == "Win-Tool" %}
+                        <li><a href="/categories/win-tool" class="">Tool ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

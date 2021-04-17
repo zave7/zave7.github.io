@@ -1,6 +1,6 @@
 ---
 title: "Window vim"
-categories: Tool
+categories: Win-Tool
 ---
 
 # PowerShell vim 설치
