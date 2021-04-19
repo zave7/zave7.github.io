@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "air" # "neon", "sunrise", "default", "aqua", "contra
 
 # Site Settings
 locale                   : "en-US"
-title                    : "평생 공부 GitBlog"
+title                    : "Zave's GitBlog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "zave"
@@ -94,8 +94,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "zave"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  name             : "개발하는 제이브"
+  avatar           : "/assets/images/bean.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Just commit"
   location         : "Seoul"
   email            : 
