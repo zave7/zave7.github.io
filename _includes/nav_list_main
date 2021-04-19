@@ -21,8 +21,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-      </li>
-      <li>
         <span class="nav__sub-title">Cloud</span>
             <ul>
                 {% for category in site.categories %}
@@ -31,8 +29,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-      </li>
-      <li>
         <span class="nav__sub-title">Database</span>
             <ul>
                 {% for category in site.categories %}
@@ -48,8 +44,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-      </li>
-      <li>
         <span class="nav__sub-title">Web_Framework</span>
             <ul>
                 {% for category in site.categories %}
@@ -58,8 +52,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-      </li>
-      <li>
         <span class="nav__sub-title">JPA</span>
             <ul>
                 {% for category in site.categories %}
@@ -75,8 +67,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-      </li>
-      <li>
         <span class="nav__sub-title">Container</span>
             <ul>
                 {% for category in site.categories %}
@@ -85,8 +75,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-      </li>
-      <li>
         <span class="nav__sub-title">Linux</span>
             <ul>
                 {% for category in site.categories %}
@@ -109,8 +97,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-      </li>
-      <li>
         <span class="nav__sub-title">Software</span>
             <ul>
                 {% for category in site.categories %}
@@ -119,8 +105,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-      </li>
-      <li>
         <span class="nav__sub-title">Test</span>
             <ul>
                 {% for category in site.categories %}
@@ -129,8 +113,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-      </li>
-      <li>
         <span class="nav__sub-title">Windows</span>
             <ul>
                 {% for category in site.categories %}
