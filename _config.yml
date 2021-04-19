@@ -97,7 +97,7 @@ author:
   name             : "zave"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Just commit"
-  location         : "korea"
+  location         : "Seoul"
   email            :
   links:
     - label: "Email"
@@ -279,6 +279,7 @@ defaults:
       comments: true
       share: true
       related: true
+      mathjax: true
       sidebar_main: true
   # - scope:
   #     path: "projects"
