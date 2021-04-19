@@ -1,7 +1,7 @@
 ---
 title: "JUint"
 layout: archive
-permalink: categories/juint
+permalink: categories/junit
 author_profile: true
 sidebar_main: true
 ---
