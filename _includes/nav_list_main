@@ -29,21 +29,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Database</span>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "Connection-Pool" %}
-                        <li><a href="/categories/connection-pool" class="">Connection-Pool ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                {% for category in site.categories %}
-                    {% if category[0] == "MariaDB" %}
-                        <li><a href="/categories/mariadb" class="">MariaDB ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
         <span class="nav__sub-title">Web_Framework</span>
             <ul>
                 {% for category in site.categories %}
@@ -94,6 +79,21 @@
                 {% for category in site.categories %}
                     {% if category[0] == "Timestamp" %}
                         <li><a href="/categories/timestamp" class="">Timestamp ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        <span class="nav__sub-title">Database</span>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "MariaDB" %}
+                        <li><a href="/categories/mariadb" class="">MariaDB ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Connection-Pool" %}
+                        <li><a href="/categories/connection-pool" class="">Connection-Pool ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
