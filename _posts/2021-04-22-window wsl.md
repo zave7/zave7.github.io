@@ -27,7 +27,6 @@ categories: Win-Tool
     ```
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
     ```
-    
 ### 3) window store 에서 원하는 리눅스 버전 설치
 - 지원하는 리눅스 버전
     - Ubuntu 16.04 LTS
@@ -50,8 +49,8 @@ categories: Win-Tool
     ```
     - `wsl1` 일 경우
         ```
-          Name           State         Version
-        * Ubuntu         Running       1
+        Name           State         Version
+        * Ubuntu       Running       1
         ```
 - 해당 버전을 WSL2로 만들기
     ```
@@ -75,8 +74,8 @@ categories: Win-Tool
     ```
     - 결과
         ```
-          Name           State         Version
-        * Ubuntu         Running       2
+        Name           State         Version
+        * Ubuntu       Running       2
         ```
     - 위와 깉이 나오지 않을 때 wsl을 재부팅 후 확인
         ```
