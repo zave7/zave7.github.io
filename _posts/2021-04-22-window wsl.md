@@ -17,6 +17,7 @@ categories: Win-Tool
 ## 2. WSL2 설치
 ### 1) Windows Terminal 설치
 - windows store에서 terminal을 검색 후 설치
+
 ### 2) WSL2 활성화 명령어 실행
 - WSL feature enable
     ```
@@ -26,6 +27,7 @@ categories: Win-Tool
     ```
     dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
     ```
+    
 ### 3) window store 에서 원하는 리눅스 버전 설치
 - 지원하는 리눅스 버전
     - Ubuntu 16.04 LTS
