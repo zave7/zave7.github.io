@@ -3,7 +3,7 @@ title: git checkout
 categories: Git
 ---
 
-# $ git checkout
+# $ git checkout - Switch branches or restore working tree files
 - `git checkout`
     - 특정 커밋의 상태로 전환하는 명령이다.
     - 체크아웃의 상세한 내용은 추후 채워넣겠다..

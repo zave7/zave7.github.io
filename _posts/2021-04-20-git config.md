@@ -3,7 +3,7 @@ title: git config
 categories: Git
 ---
 
-# $ git config
+# $ git config - Get and set repository or global options
 - 깃의 환경설정 명령어이다.
 - 환경설정을 잘 활용하면 효율적으로 깃을 사용할 수 있게된다.
 - 설정은 key=value 형식으로 이루어지는데, Git은 여파 설정 파일을 참조하므로 키가 중복으로 존재할 수 있다. 이 때 Git 나중의 값을 우선으로 사용한다.

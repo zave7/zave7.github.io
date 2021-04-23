@@ -3,7 +3,7 @@ title: git status
 categories: Git
 ---
 
-# $ git status
+# $ git status - Show the working tree status
 - `git status`
     - 깃에 의해 관리되고 있는 상태를 보여주는 명령어이다.
     - 자주 쓰이는 명령어이다.

@@ -3,7 +3,7 @@ title: git commit
 categories: Git
 ---
 
-# $ git commit
+# $ git commit - Record changes to the repository
 - `git commit`
     - index 영역의 내용을 기반으로 커밋 오브젝트를 생성하는 명령이다.
     - 커밋 오브젝트에는 부모 커밋의 해시 값과, root tree 해시 값에 대한 정보가 들어있다.

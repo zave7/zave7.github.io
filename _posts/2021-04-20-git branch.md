@@ -3,7 +3,7 @@ title: git branch
 categories: Git
 ---
 
-# $ git branch
+# $ git branch - List, create, or delete branches
 - `git branch`
     - 현재 로컬의 브랜치 리스트를 조회하는 명령이다.
     - 브랜치의 상세한 개념은 추후 내용을 채워넣겠다..
