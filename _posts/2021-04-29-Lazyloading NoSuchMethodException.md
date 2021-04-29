@@ -1,6 +1,6 @@
 ---
 title: JPA Lazyloading 시 NoSuchMethodException 발생
-categories: Springboot
+categories: JPA
 ---
 
 # 1. 문제
