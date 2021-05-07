@@ -45,7 +45,9 @@ categories: Springboot
 - 진짜 문제는 여기서 부터 시작이었다.
 1. gradle 빌드 시에 compileQuerydsl task 를 수행하는 시점에 Java 코드에서 Kotlin 클래스 파일을 참조하는 부분에서 계속 `cannot find symbol` 오류가 발생했다. 구글링을 많이 시도해봤지만 대부분이 위와 관련된 설정에 대한 가이드였고 비슷한 케이스 조차 발견하지 못했다.
     - 아래와 비슷한 에러가 출력된다.
-        - `Incremental annotation processing requested, but support is disabled because the following processors are not incremental: com.querydsl.apt.jpa.JPAAnnotationProcessor (NON_INCREMENTAL)`
+        ```
+        Incremental annotation processing requested, but support is disabled because the following processors are not incremental: com.querydsl.apt.jpa.JPAAnnotationProcessor (NON_INCREMENTAL)
+        ```
     - 그리고 JDK 컴파일러로 재컴파일 한다는 문구도 출력된다. 바로 이 부분에서 kotlin 클래스 파일을 인식하지 못하는것이다.
     - JPAAnnotationProcessor 가 증분 주석처리를 하지 못했고 그래서 전체 JDK Java 컴파일러가 전체 재컴파일을 시도한다.
     - 컴파일을 할때 컴파일된 코틀린 class 파일이 클래스 패스에 존재하지 않으니 코틀린 파일을 인식하지 못하여 `cannot find symbol` 에러를 출력하는것 같다.
