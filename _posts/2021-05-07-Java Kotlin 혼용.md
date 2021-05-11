@@ -19,7 +19,7 @@ categories: Springboot
 4. Delombok 이라는 Lombok이 제공하는 기능을 활용해 프로젝트 빌드 전에 코드를 미리 생성하게 할 수 있지만 빌드 구성이 복잡해진다고 한다.
 - 따라서 Lombok 코드를 일괄 제거 하기로 했다.
 
-### 3. Querydsl (compile)
+### 3. Querydsl (build.gradle)
 1. 기존 자바만 사용하여 Querydsl을 사용하는 빌드 구성으르 그대로 가져가면 JPA 엔티티 클래스의 쿼리타입이 생성되지 않는다. 그 이유는 Java 컴파일러가 Annotation Processing을 실행하는 과정에서 Kotlin 코드를 인지 할 수없기 때문이다.
 2. 따라서 다음과 같이 Kotlin의 Annotation Processing을 지원하도록 다음과 같이 kapt 플러그인을 적용해야한다.
     ```
@@ -50,15 +50,15 @@ categories: Springboot
 5. 최종 build.gradle
     ```
     plugins {
-	id 'org.springframework.boot' version '2.3.4.RELEASE'
-	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
-	id 'java'
-	// kotlin 플러그인
-    id 'org.jetbrains.kotlin.jvm' version '1.5.0-RC'
-	id 'org.jetbrains.kotlin.kapt' version '1.5.0-RC'
-	// 스프링 연동시 코틀린을 위한 플러그인 추가 (open, 기본생성자)
-	id "org.jetbrains.kotlin.plugin.allopen" version "1.5.0"
-	id "org.jetbrains.kotlin.plugin.noarg" version "1.5.0"
+        id 'org.springframework.boot' version '2.3.4.RELEASE'
+        id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+        id 'java'
+        // kotlin 플러그인
+        id 'org.jetbrains.kotlin.jvm' version '1.5.0-RC'
+        id 'org.jetbrains.kotlin.kapt' version '1.5.0-RC'
+        // 스프링 연동시 코틀린을 위한 플러그인 추가 (open, 기본생성자)
+        id "org.jetbrains.kotlin.plugin.allopen" version "1.5.0"
+        id "org.jetbrains.kotlin.plugin.noarg" version "1.5.0"
     }
 
     sourceCompatibility = '11'
