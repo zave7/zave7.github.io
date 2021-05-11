@@ -28,7 +28,7 @@ categories: Springboot
     }
 
     dependencies {
-        kapt "com.querydsl:querydsl-apt"
+        kapt "com.querydsl:querydsl-apt:querydslversion:jpa" // 해당하는 querydsl 버전을 기입
     }
     ```
 3. 그리고 이전에 플러그인 방식으로 적용 했었던 querydsl 설정은 제거한다.
@@ -39,6 +39,78 @@ categories: Springboot
         // id "com.ewerk.gradle.plugins.querydsl" version "버전"
     }
 
+    ```
+4. 나머지 querydsl 관련 gradle 설정을 제거한다.
+    ```
+    dependencies {
+        implementation 'com.querydsl:querydsl-jpa' // 이 의존성만 남겨놓고 나머지 모두 제거
+    }
+    ```
+
+5. 최종 build.gradle
+    ```
+    plugins {
+	id 'org.springframework.boot' version '2.3.4.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+	// kotlin 플러그인
+    id 'org.jetbrains.kotlin.jvm' version '1.5.0-RC'
+	id 'org.jetbrains.kotlin.kapt' version '1.5.0-RC'
+	// 스프링 연동시 코틀린을 위한 플러그인 추가 (open, 기본생성자)
+	id "org.jetbrains.kotlin.plugin.allopen" version "1.5.0"
+	id "org.jetbrains.kotlin.plugin.noarg" version "1.5.0"
+    }
+
+    sourceCompatibility = '11'
+    targetCompatibility = '11'
+
+    compileKotlin {
+        kotlinOptions {
+            jvmTarget = "11"
+        }
+    }
+
+    compileTestKotlin {
+        kotlinOptions {
+            jvmTarget = "11"
+        }
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+    ext {
+        kotlinVersion = '1.5.0-RC'
+        queryDslVersion = '4.3.1'
+    }
+
+    dependencies {
+
+        // 스프링부트 의존성 생략..
+
+        // kapt 버전과 jpa 까지 꼭 적어줘야 한다!!
+        kapt "com.querydsl:querydsl-apt:${queryDslVersion}:jpa" 
+
+        implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}"
+
+        // querydsl 의존성 추가
+        implementation 'com.querydsl:querydsl-jpa'
+    }
+
+    // AllOpen 을 위한 어노테이션 지정
+    allOpen {
+        annotation("com.test.project.common.plugin.KotlinAllOpen")
+    }
+
+    // 기본 생성자 생성을 위한 어노테이션 지정
+    noArg {
+        annotation("com.test.project.common.plugin.KotlinNoArgsConstructor")
+    }
+
+    test {
+        useJUnitPlatform()
+    }
     ```
 
 ### 3-1. kotlin class 'cannot find symbol' 문제
