@@ -28,7 +28,7 @@ categories: Springboot
     }
 
     dependencies {
-        kapt "com.querydsl:querydsl-apt:querydslversion:jpa" // 해당하는 querydsl 버전을 기입
+        kapt "com.querydsl:querydsl-apt:[querydslversion]:jpa" // 대괄호 부분에 해당하는 querydsl 버전을 기입
     }
     ```
 3. 그리고 이전에 플러그인 방식으로 적용 했었던 querydsl 설정은 제거한다.
