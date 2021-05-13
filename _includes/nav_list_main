@@ -108,6 +108,13 @@
         <span class="nav__sub-title">Software</span>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "REST" %}
+                        <li><a href="/categories/rest" class="">REST ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "Software" %}
                         <li><a href="/categories/software" class="">Software ({{category[1].size}})</a></li>
                     {% endif %}
