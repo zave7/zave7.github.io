@@ -6,7 +6,7 @@ categories: Github
 # Github CLI 소개
 
 ### 1. 설치  
-- [Github CLI](https://cli.github.com/) 홈페이지 접속 후 다운로드
+- [Github CLI](https://cli.github.com/) 홈페이지 접속 후 다운로드 및 설치
 
 ### 2. could not prompt 에러 발생 시
 - `2.31.1` 버전 이상으로 깃을 업데이트 
