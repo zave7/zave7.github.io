@@ -11,7 +11,7 @@ categories: Github
 ### 2. could not prompt 에러 발생 시
 - `2.31.1` 버전 이상으로 깃을 업데이트 
 - 설치 과정중 맨 마지막 옵션 체크
-    ![setup](/images/github/cli/error/setup.PNG)
+    ![setup](/images/github/cli/error/setup.png)
 
 ### 3. pr 생성
 - `gh pr create --base develop --repo [HOST]/origin/app --head my:feature`
