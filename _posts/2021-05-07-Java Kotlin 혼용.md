@@ -1,5 +1,5 @@
 ---
-title: 기존 Java Springboot 프로젝트에 Kotlin 적용
+title: 기존 Java Springboot 프로젝트에 Kotlin 도입
 categories: Springboot
 ---
 # Java 프로젝트에 Kotlin 을 추가하게 된 계기
