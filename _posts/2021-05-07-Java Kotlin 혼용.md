@@ -10,6 +10,7 @@ categories: Springboot
 - Java 코드와 Kotlin 코드의 빌드 과정은 다음과 같은 순서로 이루어진다.
     1. Kotlin 컴파일러가 Kotlin 코드를 컴파일해 .class 파일을 생성한다. 이 과정에서 Kotlin 코드가 참조하는 Java 코드가 함께 로딩되어 사용된다.
     2. Java 컴파일러가 Java코드를 컴파일 해 .class 파일을 생성한다. 이때 이미 Kotlin이 컴파일한 .class 파일의 경로를 클래스 패스에 추가해 컴파일한다.
+- [Naver D2 Kotlin 도입 과정에서 만난 문제와 해결 방법](https://d2.naver.com/helloworld/6685007)
 
 - 이 같은 이유로 컴파일 시점의 차이 때문에 기타 플러그인이나 라이브러리가 중간에 있을 경우 컴파일 단계에서 오류가 발생할 수 있다.
 
