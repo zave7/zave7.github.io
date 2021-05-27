@@ -14,7 +14,7 @@ categories: Github
     ![setup](/images/github/cli/error/setup.png)
 
 ### 3. pr 생성
-- `gh pr create --base develop --repo [HOST]/origin/app --head my:feature`
+- `gh pr create --base develop --repo [HOST/]origin/app --head my:feature`
     - --base : pr을 요청할 저장소의 브랜치를 지정하는 옵션
     - --repo : pr을 요청할 저장소를 지정하는 옵션 (host는 옵션이다)
     - --head : fork 한 자신의 저장소의 브랜치 지정
