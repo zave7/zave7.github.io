@@ -7,7 +7,7 @@ categories: Kotlin
 - 코틀린 변수 선언
     - 변수 선언시 키워드 `var` 또는 `val` 를 명시해야한다.
     - `변수명: 타입` 순으로 작성한다.
-        ```
+        ```kotlin
         ex) var v1: Int
             val v2: Long
         ```
@@ -60,6 +60,7 @@ categories: Kotlin
     - nullable 타입을 허용하지 않는다.
     - custom property 를 만들 수 없다.
     - 초기화 하지 않고 해당 프로퍼티에 접근 시 `UninitializedPropertyAccessException` 발생
+- 사용 예시
     ```kotlin
     fun main() {
         val lateVal = LateTest()
