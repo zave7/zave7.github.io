@@ -52,3 +52,50 @@ categories: Kotlin
         }
     }
     ```
+
+### 4. lateinit var
+- lateinit var 는 초기화를 미룬다는 것을 컴파일러에게 알려주는 키워드이다.
+- 제약 사항
+    - 원시타입은 선언할 수 없다.
+    - nullable 타입을 허용하지 않는다.
+    - custom property 를 만들 수 없다.
+    - 초기화 하지 않고 해당 프로퍼티에 접근 시 `UninitializedPropertyAccessException` 발생
+    ```kotlin
+    fun main() {
+        val lateVal = LateTest()
+        lateVal.init(Test(1))
+        println(lateVal.test.value)
+    }
+
+    data class Test(val value: Int)
+
+    class LateTest {
+
+        lateinit var test : Test // Test? 또는 원시타입 선언 불가
+
+        fun init(test: Test) {
+            this.test = test
+        }
+    }
+    ```
+- 아래 코드에서는 `Exception in thread "main" kotlin.UninitializedPropertyAccessException: lateinit property test has not been initialized` 이 발생한다.
+    ```kotlin
+    fun main() {
+        val lateVal = LateTest()
+        // lateVal.init(Test(1)) 
+        println(lateVal.test.value)
+    }
+    ```
+- custom property 선언 불가
+    ```kotlin
+    class LateTest {
+
+        lateinit var test : Test
+        get() { // 컴파일 에러 발생
+            test
+        }
+    }
+    ```
+
+### 5. nullable, non-null
+- 코틀린은 타입 뒤에 ? 키워드로 Null 허용 여부를 결정한다.
