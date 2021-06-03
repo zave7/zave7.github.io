@@ -23,7 +23,7 @@ categories: Springboot
 ### 3. Querydsl (build.gradle)
 1. 기존 자바만 사용하여 Querydsl을 사용하는 빌드 구성으르 그대로 가져가면 JPA 엔티티 클래스의 쿼리타입이 생성되지 않는다. 그 이유는 Java 컴파일러가 Annotation Processing을 실행하는 과정에서 Kotlin 코드를 인지 할 수없기 때문이다.
 2. 따라서 다음과 같이 Kotlin의 Annotation Processing을 지원하도록 다음과 같이 kapt 플러그인을 적용해야한다.
-    ```
+    ```groovy
     plugins {
         id 'org.jetbrains.kotlin.kapt' version '버전'
     }
@@ -33,7 +33,7 @@ categories: Springboot
     }
     ```
 3. 그리고 이전에 플러그인 방식으로 적용 했었던 querydsl 설정은 제거한다.
-    ```
+    ```groovy
     plugins {
 
         // 제거
@@ -42,14 +42,14 @@ categories: Springboot
 
     ```
 4. 나머지 querydsl 관련 gradle 설정을 제거한다.
-    ```
+    ```groovy
     dependencies {
         implementation 'com.querydsl:querydsl-jpa' // 이 의존성만 남겨놓고 나머지 모두 제거
     }
     ```
 
 5. 최종 build.gradle
-    ```
+    ```groovy
     plugins {
         id 'org.springframework.boot' version '2.3.4.RELEASE'
         id 'io.spring.dependency-management' version '1.0.10.RELEASE'
