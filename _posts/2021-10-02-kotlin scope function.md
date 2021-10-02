@@ -16,7 +16,8 @@ categories: Kotlin
 - 차이점
     - scope 함수는 본질이 비슷하지만 각 scope 함수에는 두 가지 큰 차이점이 있다.
         - 객체의 컨텍스트를 참조하는 방식
-        - 리턴 값 (this or it)  
+        - 리턴 값 (this or it)
+  
 ---
 ## 1. <b>run</b>
 - 객체의 컨텍스트를 참조하는 방식
@@ -28,7 +29,8 @@ categories: Kotlin
     - 표현식이 필요한 곳에서 다수의 구문 블럭을 실행할 수 있도록 해준다.
 - case
     - 객체 초기화와 결과를 계산할 때
-    - expression 이 필요한 곳에 statements 을 실행할 때  
+    - expression 이 필요한 곳에 statements 을 실행할 때
+- code
     ```kotlin
     class RunScope(val name: String, val age: Int)
 
@@ -50,7 +52,8 @@ categories: Kotlin
         println(">>> 비확장 함수 실행 결과 : $run1")
 
     }
-    ```  
+    ```
+  
 ---
 ## 2. <b>let</b>
 - 객체의 컨텍스트를 참조하는 방식
@@ -60,7 +63,8 @@ categories: Kotlin
     - 함수 리터럴의 마지막 expession ( scope 의 마지막 값을 리턴)
 - case
     - null 이 아닌 객체에 람다를 실행할 때
-    - 지역 scope 에서 expression을 변수로 선언할 때  
+    - 지역 scope 에서 expression을 변수로 선언할 때
+- code
     ```kotlin
     class LetScope(val name: String, val age: Int?) {
 
@@ -114,7 +118,8 @@ categories: Kotlin
             println("?")
         }
     }
-    ```  
+    ```
+  
 ---
 ## 3. <b>apply</b> <span style="color:gray">*"다음의 지시를 객체에 적용하라(apply the following assignments to the object)."*</spam>
 - 객체의 컨텍스트를 참조하는 방식
@@ -123,7 +128,8 @@ categories: Kotlin
 - 리턴 값
     - 컨텍스트 객체를 리턴한다.
 - case
-    - 객체 선언  
+    - 객체 선언
+- code
     ```kotlin
     class ApplyScope(val name: String, val age: Int) {
         fun printName() {
@@ -143,7 +149,8 @@ categories: Kotlin
         applyScope.apply(ApplyScope::printName).apply { println("모든 프로퍼티를 출력했어요!") }
 
     }
-    ```  
+    ```
+  
 ---
 ## 4. <b>also</b> <span style="color:gray">*"그리고 또한 다음을 수행하라(and also do the following)."*</style>
 - 객체의 컨텍스트를 참조하는 방식
@@ -152,7 +159,8 @@ categories: Kotlin
 - 리턴 값
     - 컨텍스트 객체를 리턴한다.
 - case
-    - 부가적인 실행  
+    - 부가적인 실행
+- code
     ```kotlin
     data class AlsoScope(val name: String, val age: Int)
 
@@ -164,6 +172,7 @@ categories: Kotlin
             .also { also -> println("한번 더 출력 : $also") }
     }
     ```
+  
 ---
 ## 5. <b>with</b> <span style="color:gray">*"이 객체로, 다음을 수행하라(with this object, do the following.)."*</style>
 - 객체의 컨텍스트를 참조하는 방식
@@ -174,7 +183,8 @@ categories: Kotlin
 - 비확장 함수이다.
 - case
     - 객체에 대한 그룹 함수 호출
-    - 헬퍼 객체의 프로퍼티나 함수를 선언  
+    - 헬퍼 객체의 프로퍼티나 함수를 선언
+- code
     ```kotlin
     data class WithScope(val name: String, val age: Int)
 
@@ -189,4 +199,5 @@ categories: Kotlin
         println("${result == 1}")
 
     }
-    ```  
+    ```
+  
