@@ -5,7 +5,7 @@ categories: Kotlin
 
 # kapt란
 - `kapt (annotation processing for kotlin)` 는 코틀린이 자바의 어노테이션을 처리할 때 kotlin 파일의 어노테이션 처리를 포함합니다. JVM을 기동시킬 때 Kotlin의 어노테이션을 포함시키이 위해 사용되는 플러그인입니다.
-- 기존 `annotationProcessor` 대신 사용하면된다.
+- 기존 `annotationProcessor` 대신 사용하면된다. ([공식 문서 링크](https://kotlinlang.org/docs/kapt.html#using-in-gradle){:target="_blank"})
 
 ### 호환 문제 (jdk16)
 - 현재 kapt 는 jdk16+ 와 호환되지 않고 있다.
