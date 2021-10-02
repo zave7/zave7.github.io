@@ -17,8 +17,7 @@ categories: Kotlin
     - scope 함수는 본질이 비슷하지만 각 scope 함수에는 두 가지 큰 차이점이 있다.
         - 객체의 컨텍스트를 참조하는 방식
         - 리턴 값 (this or it)
-  
----
+
 ## 1. <b>run</b>
 - 객체의 컨텍스트를 참조하는 방식
     - 람다 수신자로써의 컨텍스트를 this 키워드로 참조한다.
@@ -53,8 +52,7 @@ categories: Kotlin
 
     }
     ```
-  
----
+
 ## 2. <b>let</b>
 - 객체의 컨텍스트를 참조하는 방식
     - 컨텍스트 객체를 람자 인자로 가진다.
@@ -119,9 +117,8 @@ categories: Kotlin
         }
     }
     ```
-  
----
-## 3. <b>apply</b> <span style="color:gray">*"다음의 지시를 객체에 적용하라(apply the following assignments to the object)."*</spam>
+
+## 3. <b>apply</b> <span style="color:gray">*"다음의 지시를 객체에 적용하라(apply the following assignments to the object)."*</span>
 - 객체의 컨텍스트를 참조하는 방식
     - 람자 수신자로써의 컨텍스트를 this 키워드로 참조
     - `apply` 를 사용할 경우 내부 scope 는 this 의 성질을 갖는다.
@@ -150,9 +147,8 @@ categories: Kotlin
 
     }
     ```
-  
----
-## 4. <b>also</b> <span style="color:gray">*"그리고 또한 다음을 수행하라(and also do the following)."*</style>
+
+## 4. <b>also</b> <span style="color:gray">*"그리고 또한 다음을 수행하라(and also do the following)."*</span>
 - 객체의 컨텍스트를 참조하는 방식
     - 컨텍스트 객테를 람자 인자로 가진다.
     - 암시적인 기본 이름인 it 으로 접근이 가능하다.
@@ -172,9 +168,8 @@ categories: Kotlin
             .also { also -> println("한번 더 출력 : $also") }
     }
     ```
-  
----
-## 5. <b>with</b> <span style="color:gray">*"이 객체로, 다음을 수행하라(with this object, do the following.)."*</style>
+
+## 5. <b>with</b> <span style="color:gray">*"이 객체로, 다음을 수행하라(with this object, do the following.)."*</span>
 - 객체의 컨텍스트를 참조하는 방식
     - 람다 수신자로써의 컨텍스트를 this 키워드로 참조
     - `with` 을 사용할 경우 내부 scope 는 this 의 성질을 갖는다.
