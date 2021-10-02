@@ -18,7 +18,7 @@ categories: Kotlin
         - 객체의 컨텍스트를 참조하는 방식
         - 리턴 값 (this or it)
 
-## 1. <span style="color:red"><b>run</b></span>
+## <span style="color:red"><b>run</b></span>
 - 객체의 컨텍스트를 참조하는 방식
     - 람다 수신자로써의 컨텍스트를 this 키워드로 참조한다.
     - `run` 을 사용할 경우 내부 scope 는 this 의 성질을 같는다.
@@ -53,7 +53,7 @@ categories: Kotlin
     }
     ```
 
-## 2. <span style="color:orange"><b>let</b></span>
+## <span style="color:orange"><b>let</b></span>
 - 객체의 컨텍스트를 참조하는 방식
     - 컨텍스트 객체를 람자 인자로 가진다.
     - 암시적인 기본 이름인 it 으로 접근이 가능하다.
@@ -118,7 +118,7 @@ categories: Kotlin
     }
     ```
 
-## 3. <span style="color:yellow"><b>apply</b></span> <span style="color:gray">*"다음의 지시를 객체에 적용하라(apply the following assignments to the object)."*</span>
+## <span style="color:yellow"><b>apply</b></span> <span style="color:gray;font-size:0.75em;">*"다음의 지시를 객체에 적용하라(apply the following assignments to the object)."*</span>
 - 객체의 컨텍스트를 참조하는 방식
     - 람자 수신자로써의 컨텍스트를 this 키워드로 참조
     - `apply` 를 사용할 경우 내부 scope 는 this 의 성질을 갖는다.
@@ -148,7 +148,7 @@ categories: Kotlin
     }
     ```
 
-## 4. <span style="color:green"><b>also</b></span> <span style="color:gray">*"그리고 또한 다음을 수행하라(and also do the following)."*</span>
+## <span style="color:green"><b>also</b></span> <span style="color:gray;font-size:0.75em;">*"그리고 또한 다음을 수행하라(and also do the following)."*</span>
 - 객체의 컨텍스트를 참조하는 방식
     - 컨텍스트 객테를 람자 인자로 가진다.
     - 암시적인 기본 이름인 it 으로 접근이 가능하다.
@@ -169,7 +169,7 @@ categories: Kotlin
     }
     ```
 
-## 5. <span style="color:blue"><b>with</b></span> <span style="color:gray">*"이 객체로, 다음을 수행하라(with this object, do the following.)."*</span>
+## <span style="color:blue"><b>with</b></span> <span style="color:gray;font-size:0.75em;">*"이 객체로, 다음을 수행하라(with this object, do the following.)."*</span>
 - 객체의 컨텍스트를 참조하는 방식
     - 람다 수신자로써의 컨텍스트를 this 키워드로 참조
     - `with` 을 사용할 경우 내부 scope 는 this 의 성질을 갖는다.
