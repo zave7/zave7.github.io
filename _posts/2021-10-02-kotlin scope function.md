@@ -118,7 +118,7 @@ categories: Kotlin
     }
     ```
 
-## <span style="color:yellow"><b>apply</b></span> <span style="color:gray;font-size:0.75em;">*"다음의 지시를 객체에 적용하라(apply the following assignments to the object)."*</span>
+## <span style="color:gold"><b>apply</b></span> <span style="color:gray;font-size:0.75em;">*"다음의 지시를 객체에 적용하라(apply the following assignments to the object)."*</span>
 - 객체의 컨텍스트를 참조하는 방식
     - 람자 수신자로써의 컨텍스트를 this 키워드로 참조
     - `apply` 를 사용할 경우 내부 scope 는 this 의 성질을 갖는다.
