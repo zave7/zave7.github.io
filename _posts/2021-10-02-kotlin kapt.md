@@ -10,10 +10,10 @@ categories: Kotlin
 ### 호환 문제 (jdk16)
 - 현재 kapt 는 jdk16+ 와 호환되지 않고 있다.
 - kapt 를 사용하는 querydsl 같은 디펜던시를 사용하지 못한다.
-- 관련 링크 : https://youtrack.jetbrains.com/issue/KT-45545
+- 관련 링크 : [https://youtrack.jetbrains.com/issue/KT-45545](https://youtrack.jetbrains.com/issue/KT-45545){:target="_blank"}
 
 ### KSP 
 - `kapt` 를 대신하는 `KSP` API
     - 코틀린 1.4.30 버전 이상부터 호환되며 `kapt` 에 비해 최대 2배 이상 빠르다고 한다.
-- KSP Github link : https://github.com/google/ksp
-- 참조 링크 : https://www.charlezz.com/?p=45255
+- KSP Github link : [https://github.com/google/ksp](https://github.com/google/ksp){:target="_blank"}
+- 참조 링크 : [https://www.charlezz.com/?p=45255](https://www.charlezz.com/?p=45255){:target="_blank"}
