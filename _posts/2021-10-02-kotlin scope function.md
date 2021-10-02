@@ -8,11 +8,7 @@ categories: Kotlin
 - 이런 함수들을 람다식으로 호출할 때, 이는 임시로 범위(scope) 를 형성한다.
 - 이 범위 내에서는 객체의 이름이 없어도 객체에 접근 할 수 있다. 이러한 함수를 `scope function` 이라고 한다.
 - 종류
-    - run
-    - let
-    - apply
-    - also
-    - with
+    - run, let, apply, also, with
 - 차이점
     - scope 함수는 본질이 비슷하지만 각 scope 함수에는 두 가지 큰 차이점이 있다.
         - 객체의 컨텍스트를 참조하는 방식
