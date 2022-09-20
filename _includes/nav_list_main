@@ -112,6 +112,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Elasticsearch" %}
+                        <li><a href="/categories/elasticsearch" class="">Elasticsearch ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">Software</span>
             <ul>
                 {% for category in site.categories %}
