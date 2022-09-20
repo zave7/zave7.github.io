@@ -74,8 +74,6 @@ categories: Elasticsearch
     - 인덱스 삭제
         - DELETE books
 
-[재인덱싱](https://www.notion.so/e392fda019244cba9307ab8b89335765)
-
 ## Alias
 
 - 인덱스에 대한 별칭
@@ -147,39 +145,36 @@ categories: Elasticsearch
     - 스키마리스와 동일하게 자동으로 생성된 필드의 매핑정보가 text 와 keyword 두 가지를 제공하도록 설정된다.
     - 만약 실수로 인덱스 생성 과정에서 특정 필드를 빠뜨리고 색인을 생성했다면 추후에 자동으로 해당 필드의 매핑 정보가 생성되기 때문에 색인을 할 때 문제를 알아차리기 어려울 수 있다.
     
-    <aside>
     💡 동적 매핑 설정
     
     - 동적 매핑을 사용하지 않으려면 인덱스 생성시에 mapping 정보의 dynamic 속성을 “strict” 로 설정하면 된다.
-    
-    ```json
-    PUT /books
-    {
-      "settings": {
-        "number_of_shards": 1,
-        "number_of_replicas": 0
-      },
-      "mappings": {
-        "properties": {
-          "title": {
-            "type": "text"
+      
+        ```json
+        PUT /books
+        {
+          "settings": {
+            "number_of_shards": 1,
+            "number_of_replicas": 0
           },
-          "titleEn": {
-            "type": "text"
-          },
-          "writer": {
-            "type": "text"
-          },
-          "productDate": {
-            "type": "date"
+          "mappings": {
+            "properties": {
+              "title": {
+                "type": "text"
+              },
+              "titleEn": {
+                "type": "text"
+              },
+              "writer": {
+                "type": "text"
+              },
+              "productDate": {
+                "type": "date"
+              }
+            },
+            "dynamic": "strict"
           }
-        },
-        "dynamic": "strict"
-      }
-    }
-    ```
-    
-    </aside>
+        }
+        ```
     
     - dynamic 속성 종류
         - true : 새로운 필드는 매핑에 추가된다. (기본값)
