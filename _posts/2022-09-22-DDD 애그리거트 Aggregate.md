@@ -1,5 +1,5 @@
 ---
-title: DDD 2. 아키텍쳐 개요
+title: DDD 3. 애그리거트 Aggregate
 categories: ddd
 ---
 

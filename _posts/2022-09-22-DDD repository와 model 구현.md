@@ -1,5 +1,5 @@
 ---
-title: DDD 2. 아키텍쳐 개요
+title: DDD 4. Repository와 Model 구현
 categories: ddd
 ---
 
