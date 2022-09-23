@@ -1,6 +1,6 @@
 ---
 title: Elasticsearch 기본 내용 정리
-categories: Elasticsearch
+categories: elasticsearch
 ---
 
 # Elasticsearch 기본 내용 정리

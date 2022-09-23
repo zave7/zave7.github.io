@@ -1,6 +1,6 @@
 ---
 title: Elasticsearch 재인덱싱
-categories: Elasticsearch
+categories: elasticsearch
 ---
 
 # Elasticsearch 기본 내용 정리
