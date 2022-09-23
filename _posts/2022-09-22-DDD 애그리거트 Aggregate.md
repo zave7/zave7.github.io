@@ -1,6 +1,6 @@
 ---
 title: DDD 3. 애그리거트 Aggregate
-categories: ddd
+categories: DDD
 ---
 
 # ⌜애그리거트**⌟**

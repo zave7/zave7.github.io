@@ -1,6 +1,6 @@
 ---
 title: DDD 4. Repository와 Model 구현
-categories: ddd
+categories: DDD
 ---
 
 # ⌜리포지터리와 모델 구현**⌟**
