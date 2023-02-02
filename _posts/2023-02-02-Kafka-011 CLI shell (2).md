@@ -3,8 +3,6 @@ title: Kafka shell script (2)
 categories: Kafka
 ---
 
-# 카프카 shell script (CLI) (2)
-
 ### **kafka-producer-perf-test.sh**
 
 카프카 프로듀서로 퍼포먼스를 측정할 때 사용된다.

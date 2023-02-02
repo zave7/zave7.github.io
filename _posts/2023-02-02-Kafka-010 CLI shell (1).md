@@ -3,8 +3,6 @@ title: Kafka shell script (1)
 categories: Kafka
 ---
 
-# 카프카 shell script (CLI) (1)
-
 ### **kafka-topics.sh**
 
 클러스터 정보와 토픽 이름은 토픽을 만들기 위한 필수 값이다.
