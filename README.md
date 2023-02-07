@@ -1,4 +1,4 @@
-# Chan.e's GitBlog
+# Chan's GitBlog
    ## #Tip #Technical-Description #Error-Resolution 
    ### Docker
       - creating Dockerfile, create Image, creating and running containers, etc.
