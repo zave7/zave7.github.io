@@ -39,49 +39,42 @@ categories: Git
             
 - **type**
     - <span style="color:green"><b>blob</b></span>
-        
-        <aside>
-        💡 < 저장 형식 >
-        Header : blob_{byteSize}\0
-        Body :
-        
-        </aside>
-        
-        - '\0' 는 헤더의 끝을 나타냄
-        
         - 파일명 같은 메타데이터 없이, 바이너리 데이터 자체만 zlib 압축 라이브러리로 압축하여 저장
+        - '\0' 는 헤더의 끝을 나타냄
+        <aside>
+        💡 < 저장 형식 ><br/>
+        Header : blob_{byteSize}\0<br/>
+        Body :<br/>
+        </aside>
         
     - <span style="color:blue"><b>tree</b></span>
-        
-        <aside>
-        💡 < 저장 형식 >
-        100644(타입) blob a5bce3f...c6f42d0504a848bd5 test1.txt 
-        100644(타입) blob 8a8363...d181321626be514c7f4 test2.txt 
-        040000(타입) tree 8a8363...ed61321626be514c7f4 etc
-        </aside>
         - blob 와 tree 의 정보를 갖는다.
+        <aside>
+        💡 < 저장 형식 ><br/>
+        100644(타입) blob a5bce3f...c6f42d0504a848bd5 test1.txt<br/>
+        100644(타입) blob 8a8363...d181321626be514c7f4 test2.txt<br/>
+        040000(타입) tree 8a8363...ed61321626be514c7f4 etc<br/>
+        </aside>
     
     - <span style="color:orange"><b>commit</b></span>
         - 구성 요소 : root tree, parent commit, author, committer
         - 일반 커밋과 merge 커밋으로 나뉜다.
-        
+        - merge 커밋은 2개의 부모 커밋을 갖는다.
         <aside>
-        💡 < 일반 commit >
-        tree d537288f8e58761133a9367be3477d79365b2b29
-        parent db74711b3f977ddaed5bd01cbf8f78663e3f1721
-        author zave7 <zave7@naver.com> 1634614163 +0900
-        committer zave7 <zave7@naver.com> 1634614163 +0900
+        💡 < 일반 commit ><br/>
+        tree d537288f8e58761133a9367be3477d79365b2b29<br/>
+        parent db74711b3f977ddaed5bd01cbf8f78663e3f1721<br/>
+        author zave7 <zave7@naver.com> 1634614163 +0900<br/>
+        committer zave7 <zave7@naver.com> 1634614163 +0900<br/>
         </aside>
         
-        - merge 커밋은 2개의 부모 커밋을 갖는다.
-        
         <aside>
-        💡 < merge commit >
-        tree c506115755a3eaac4043bee111f07e351e3d4ad5
-        parent c36876f07e29572ea9a1f22a4c7e43ca62173a72
-        parent 11a227f98d37ce9939c2c5ce8bab378bef688a9f
-        author zave7 <zave7@naver.com> 1634614291 +0900
-        committer zave7 <zave7@naver.com> 1634614291 +0900
+        💡 < merge commit ><br/>
+        tree c506115755a3eaac4043bee111f07e351e3d4ad5<br/>
+        parent c36876f07e29572ea9a1f22a4c7e43ca62173a72<br/>
+        parent 11a227f98d37ce9939c2c5ce8bab378bef688a9f<br/>
+        author zave7 <zave7@naver.com> 1634614291 +0900<br/>
+        committer zave7 <zave7@naver.com> 1634614291 +0900<br/>
         </aside>
         
 - hash
