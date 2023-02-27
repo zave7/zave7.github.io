@@ -38,46 +38,47 @@ categories: Git
             - 내용 조회
             
 - **type**
+
+    ---
     - <span style="color:green"><b>blob</b></span>
         - 파일명 같은 메타데이터 없이, 바이너리 데이터 자체만 zlib 압축 라이브러리로 압축하여 저장
         - '\0' 는 헤더의 끝을 나타냄
-        <aside>
-        💡 < 저장 형식 ><br/>
-        Header : blob_{byteSize}\0<br/>
-        Body :<br/>
-        </aside>
-        
+            <aside>
+            💡 < 저장 형식 ><br/>
+            Header : blob_{byteSize}\0<br/>
+            Body :<br/>
+            </aside>
+    ---
     - <span style="color:blue"><b>tree</b></span>
         - blob 와 tree 의 정보를 갖는다.
-        <aside>
-        💡 < 저장 형식 ><br/>
-        100644(타입) blob a5bce3f...c6f42d0504a848bd5 test1.txt<br/>
-        100644(타입) blob 8a8363...d181321626be514c7f4 test2.txt<br/>
-        040000(타입) tree 8a8363...ed61321626be514c7f4 etc<br/>
-        </aside>
-    
+            <aside>
+            💡 < 저장 형식 ><br/>
+            100644(타입) blob a5bce3f...c6f42d0504a848bd5 test1.txt<br/>
+            100644(타입) blob 8a8363...d181321626be514c7f4 test2.txt<br/>
+            040000(타입) tree 8a8363...ed61321626be514c7f4 etc<br/>
+            </aside>
+    ---
     - <span style="color:orange"><b>commit</b></span>
         - 구성 요소 : root tree, parent commit, author, committer
         - 일반 커밋과 merge 커밋으로 나뉜다.
+            <aside>
+            💡 < 일반 commit ><br/>
+            tree d537288f8e58761133a9367be3477d79365b2b29<br/>
+            parent db74711b3f977ddaed5bd01cbf8f78663e3f1721<br/>
+            author zave7 <zave7@naver.com> 1634614163 +0900<br/>
+            committer zave7 <zave7@naver.com> 1634614163 +0900<br/>
+            </aside>
         - merge 커밋은 2개의 부모 커밋을 갖는다.
-        <aside>
-        💡 < 일반 commit ><br/>
-        tree d537288f8e58761133a9367be3477d79365b2b29<br/>
-        parent db74711b3f977ddaed5bd01cbf8f78663e3f1721<br/>
-        author zave7 <zave7@naver.com> 1634614163 +0900<br/>
-        committer zave7 <zave7@naver.com> 1634614163 +0900<br/>
-        </aside>
-        
-        <aside>
-        💡 < merge commit ><br/>
-        tree c506115755a3eaac4043bee111f07e351e3d4ad5<br/>
-        parent c36876f07e29572ea9a1f22a4c7e43ca62173a72<br/>
-        parent 11a227f98d37ce9939c2c5ce8bab378bef688a9f<br/>
-        author zave7 <zave7@naver.com> 1634614291 +0900<br/>
-        committer zave7 <zave7@naver.com> 1634614291 +0900<br/>
-        </aside>
-        
-- hash
+            <aside>
+            💡 < merge commit ><br/>
+            tree c506115755a3eaac4043bee111f07e351e3d4ad5<br/>
+            parent c36876f07e29572ea9a1f22a4c7e43ca62173a72<br/>
+            parent 11a227f98d37ce9939c2c5ce8bab378bef688a9f<br/>
+            author zave7 <zave7@naver.com> 1634614291 +0900<br/>
+            committer zave7 <zave7@naver.com> 1634614291 +0900<br/>
+            </aside>
+    
+- **hash**
     - 깃은 파일을 SHA-1로 해시하여 해시값은 key 로, 압축된 파일은 value 로 key-value 형식으로 관리한다.
     - 해시값 40자 중 앞의 2자리는 디렉토리명으로 사용하고 나머지 38자는 오브젝트 파일의 실제 파일명으로 사용된다.
     - 메타데이터를 포함하지 않고 해시하기 때문에 파일명이 다르지만 내용이 같은 파일을 여러개 저장할 경우 하나의 blob로만 관리된다. 
