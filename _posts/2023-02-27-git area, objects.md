@@ -66,7 +66,7 @@ categories: Git
             <aside>
             💡 < 일반 commit ><br/>
             <span style="color:blue">tree</span> d537288f8e58761133a9367be3477d79365b2b29<br/>
-            <span style="color:yellow">parent</span> db74711b3f977ddaed5bd01cbf8f78663e3f1721<br/>
+            <span style="color:orange">parent</span> db74711b3f977ddaed5bd01cbf8f78663e3f1721<br/>
             <span style="color:gray">author</span> zave7 <zave7@naver.com> 1634614163 +0900<br/>
             <span style="color:pink">committer</span> zave7 <zave7@naver.com> 1634614163 +0900<br/>
             </aside>
@@ -74,8 +74,8 @@ categories: Git
             <aside>
             💡 < merge commit ><br/>
             <span style="color:blue">tree</span> c506115755a3eaac4043bee111f07e351e3d4ad5<br/>
-            <span style="color:yellow">parent</span>  c36876f07e29572ea9a1f22a4c7e43ca62173a72<br/>
-            <span style="color:yellow">parent</span>  11a227f98d37ce9939c2c5ce8bab378bef688a9f<br/>
+            <span style="color:orange">parent</span>  c36876f07e29572ea9a1f22a4c7e43ca62173a72<br/>
+            <span style="color:orange">parent</span>  11a227f98d37ce9939c2c5ce8bab378bef688a9f<br/>
             <span style="color:gray">author</span> zave7 <zave7@naver.com> 1634614291 +0900<br/>
             <span style="color:pink">committer</span> zave7 <zave7@naver.com> 1634614291 +0900<br/>
             </aside>
