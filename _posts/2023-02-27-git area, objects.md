@@ -48,34 +48,36 @@ categories: Git
             Header : blob_{byteSize}\0<br/>
             Body :<br/>
             </aside>
+    
     ---
     - <span style="color:blue"><b>tree</b></span>
         - blob 와 tree 의 정보를 갖는다.
             <aside>
             💡 < 저장 형식 ><br/>
-            100644(타입) blob a5bce3f...c6f42d0504a848bd5 test1.txt<br/>
-            100644(타입) blob 8a8363...d181321626be514c7f4 test2.txt<br/>
-            040000(타입) tree 8a8363...ed61321626be514c7f4 etc<br/>
+            100644(타입) <span style="color:green">blob</span> a5bce3f...c6f42d0504a848bd5 test1.txt<br/>
+            100644(타입) <span style="color:green">blob</span> 8a8363...d181321626be514c7f4 test2.txt<br/>
+            040000(타입) <span style="color:blue">tree</span> 8a8363...ed61321626be514c7f4 etc<br/>
             </aside>
+    
     ---
     - <span style="color:orange"><b>commit</b></span>
         - 구성 요소 : root tree, parent commit, author, committer
         - 일반 커밋과 merge 커밋으로 나뉜다.
             <aside>
             💡 < 일반 commit ><br/>
-            tree d537288f8e58761133a9367be3477d79365b2b29<br/>
-            parent db74711b3f977ddaed5bd01cbf8f78663e3f1721<br/>
-            author zave7 <zave7@naver.com> 1634614163 +0900<br/>
-            committer zave7 <zave7@naver.com> 1634614163 +0900<br/>
+            <span style="color:blue">tree</span> d537288f8e58761133a9367be3477d79365b2b29<br/>
+            <span style="color:yellow">parent</span> db74711b3f977ddaed5bd01cbf8f78663e3f1721<br/>
+            <span style="color:gray">author</span> zave7 <zave7@naver.com> 1634614163 +0900<br/>
+            <span style="color:pink">committer</span> zave7 <zave7@naver.com> 1634614163 +0900<br/>
             </aside>
         - merge 커밋은 2개의 부모 커밋을 갖는다.
             <aside>
             💡 < merge commit ><br/>
-            tree c506115755a3eaac4043bee111f07e351e3d4ad5<br/>
-            parent c36876f07e29572ea9a1f22a4c7e43ca62173a72<br/>
-            parent 11a227f98d37ce9939c2c5ce8bab378bef688a9f<br/>
-            author zave7 <zave7@naver.com> 1634614291 +0900<br/>
-            committer zave7 <zave7@naver.com> 1634614291 +0900<br/>
+            <span style="color:blue">tree</span> c506115755a3eaac4043bee111f07e351e3d4ad5<br/>
+            <span style="color:yellow">parent</span>  c36876f07e29572ea9a1f22a4c7e43ca62173a72<br/>
+            <span style="color:yellow">parent</span>  11a227f98d37ce9939c2c5ce8bab378bef688a9f<br/>
+            <span style="color:gray">author</span> zave7 <zave7@naver.com> 1634614291 +0900<br/>
+            <span style="color:pink">committer</span> zave7 <zave7@naver.com> 1634614291 +0900<br/>
             </aside>
     
 - **hash**
