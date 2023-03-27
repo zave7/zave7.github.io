@@ -1,0 +1,17 @@
+img { // 방문자수 이미지 크기
+  width: auto; height: auto;
+  max-width: 140px;
+  max-height: 38px;
+  margin-bottom: 1em;
+}
+
+a {
+  color: inherit;
+  font-size: $type-size-3;
+  font-family: $cute;
+  color: mix(#fff,$primary-color,80%);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
