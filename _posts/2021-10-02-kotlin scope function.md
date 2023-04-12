@@ -17,7 +17,7 @@ categories: Kotlin
 ## <span style="color:red"><b>run</b></span>
 - 객체의 컨텍스트를 참조하는 방식
     - 람다 수신자로써의 컨텍스트를 this 키워드로 참조한다.
-    - `run` 을 사용할 경우 내부 scope 는 this 의 성질을 같는다.
+    - `run` 을 사용할 경우 내부 scope 는 this 의 성질을 갖는다.
 - 리턴 값
     - 함수 리터럴의 마지막 expression
 - 비확장 함수로도 사용가능
