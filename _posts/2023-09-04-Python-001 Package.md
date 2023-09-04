@@ -123,6 +123,6 @@ __init__.py 파일은 해당 디렉토리가 패키지의 일부임을 알려주
     - `__main__` 모듈의 경우 패키지의 구조가 실제 파일 시스템에 있는 위치에 관계없이 최상위 모듈인 것 처럼 된다.
     - 따라서 상대경로 import 는 할 수 없고 절대경로로 지정해줘야한다.
         - 참조 : 
-        [https://velog.io/@anjaekk/python절대경로상대경로-상대경로-import-에러이유와-해결](https://velog.io/@anjaekk/python%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C%EC%83%81%EB%8C%80%EA%B2%BD%EB%A1%9C-%EC%83%81%EB%8C%80%EA%B2%BD%EB%A1%9C-import-%EC%97%90%EB%9F%AC%EC%9D%B4%EC%9C%A0%EC%99%80-%ED%95%B4%EA%B2%B0)
-        [https://docs.python.org/3/tutorial/modules.html#intra-package-references](https://docs.python.org/3/tutorial/modules.html#intra-package-references)
-        [https://peps.python.org/pep-0328/](https://peps.python.org/pep-0328/)
+            - [https://velog.io/@anjaekk/python절대경로상대경로-상대경로-import-에러이유와-해결](https://velog.io/@anjaekk/python%EC%A0%88%EB%8C%80%EA%B2%BD%EB%A1%9C%EC%83%81%EB%8C%80%EA%B2%BD%EB%A1%9C-%EC%83%81%EB%8C%80%EA%B2%BD%EB%A1%9C-import-%EC%97%90%EB%9F%AC%EC%9D%B4%EC%9C%A0%EC%99%80-%ED%95%B4%EA%B2%B0)
+            - [https://docs.python.org/3/tutorial/modules.html#intra-package-references](https://docs.python.org/3/tutorial/modules.html#intra-package-references)
+            - [https://peps.python.org/pep-0328/](https://peps.python.org/pep-0328/)
