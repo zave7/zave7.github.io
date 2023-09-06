@@ -299,6 +299,17 @@ categories: Python
     ## lcm : 최소 공배수를 구하는 함수 (python 3.9 버전부터 존재)
     lcm_val = math.lcm(3, 9, 18) # 18
     ```
+
+- fractions
+
+    유리수를 표현할 때 사용하는 표준 라이브러리
+    ```python
+    from fractions import Fraction
+
+    ## Fraction
+    Fraction(1, 5) # 5분의 1
+    Fraction('1/3') # 3분의 1
+    ```
     
 
 ---
@@ -351,4 +362,106 @@ categories: Python
         t.join()
     
     print("End")
+    ```
+
+---
+
+## Data
+
+- json
+
+    json 데이터 처리 모듈
+    ```python
+    import json
+
+    ## load : json 파일을 읽고 dictionary 로 변환하여 반환
+    import tempfile
+
+    with tempfile.TemporaryFile("r+") as file_json:
+        file_json.write('{ "test": 1 }')
+        file_json.seek(0)
+        json_data = json.load(file_json)
+        type(json_data) # <class 'dict'>
+
+    ## dumps : dictionary 자료형을 json 문자열로 변환
+    dict = { "a": 1 }
+    json_str = json.dumps(dict)
+    print(json_str)
+
+    ## dump : dictionary 자료형을 json 파일로 생성
+    with tempfile.TemporaryFile("r+") as file_json:
+        dict = { "한글": "ㄱㄴㄷㄹ" }
+        json.dump(dict, file_json) # 유니코드로 변환
+        file_json.seek(0)
+        file_json.read() # {"\ud55c\uae00": "\u3131\u3134\u3137\u3139"}
+        
+        file_json.truncate(0) # 파일 크기를 0byte로 조정, 파일 크기를 지정하지 않으면 현재 위치의 크기로 지정된다.
+        json.dump(dict, file_json, ensure_ascii=False) # 유니코드(아스키) 변환 X
+        file_json.seek(0)
+        file_json.read() # {"한글": "ㄱㄴㄷㄹ"}
+
+    list_json = json.dumps([1, 2, 3]) # '[1, 2, 3]'
+    tuple_json = json.dumps((1, 2, 3)) # '[1, 2, 3]'
+    ```
+
+---
+
+## Exception
+
+- traceback
+
+    프로그램 실행 중 발생한 오류 추적 모듈
+    ```python
+    import traceback
+
+    def a():
+        a = 1 / 0
+    def b():
+        a()
+    def c():
+        b()
+
+    try:
+        c()
+    except:
+        print(traceback.format_exc())
+
+    # Traceback (most recent call last):
+    #   File "/Users/zave/Private/dev/learning/python/standard_library/exception.py", line 12, in <module>
+    #     c()
+    #   File "/Users/zave/Private/dev/learning/python/standard_library/exception.py", line 9, in c
+    #     b()
+    #   File "/Users/zave/Private/dev/learning/python/standard_library/exception.py", line 7, in b
+    #     a()
+    #   File "/Users/zave/Private/dev/learning/python/standard_library/exception.py", line 5, in a
+    #     a = 1 / 0
+    #         ~~^~~
+    # ZeroDivisionError: division by zero
+    ```
+
+---
+
+## Web
+
+- urllib
+
+    URL을 가져오기 위한 파이썬 모듈
+    ```python
+    import urllib.request
+
+    ## request.urlopen : http 요청
+    resource = "https://wikidocs.net/33"
+    with urllib.request.urlopen(resource) as html:
+        with open("wikidocs_33.html", "wb") as file:
+            file.write(html.read())
+    ```
+
+- webbrowser
+
+    시스템 브라우져를 호출할 때 사용하는 모듈
+    ```python
+    import webbrowser
+
+    ## open_new : 시스템 브라우져 새 창으로 열기
+    webbrowser.open_new('https://www.naver.com')
     ```
