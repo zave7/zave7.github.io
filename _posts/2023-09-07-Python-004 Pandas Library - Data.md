@@ -1,7 +1,11 @@
 ---
 title: 파이썬 판다스(Pandas) 데이터 구조
 categories: Python
-tags: Python, Pandas, Series, DataFrame
+tags: 
+  - Python
+  - Pandas
+  - Series
+  - DataFrame
 ---
 
 파이썬 Pandas 라이브러리에 대해 정리합니다.
