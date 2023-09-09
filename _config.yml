@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "neon", "sunrise", "default", "aqua", "co
 
 # Site Settings
 locale                   : "en-US"
-title                    : "찬 GitBlog"
+title                    : "tech blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "zave"
@@ -94,9 +94,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "개발하는 찬"
+  name             : "찬"
   avatar           : https://user-images.githubusercontent.com/41621552/115273071-111b0e80-a17a-11eb-8f12-be66d72aaf14.png # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Just commit"
+  bio              : "백엔드 엔지니어에서 AI 엔지니어로 전향 중이에요"
   location         : "Seoul"
   email            : 
   links:

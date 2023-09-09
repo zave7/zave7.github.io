@@ -36,7 +36,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Message Queue</span>
+        <span class="nav__sub-title">MQ</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Kafka" %}
@@ -44,7 +44,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Languages</span>
+        <span class="nav__sub-title">Lang</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Kotlin" %}
@@ -98,7 +98,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Database</span>
+        <span class="nav__sub-title">DB</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "MariaDB" %}
@@ -150,7 +150,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Android</span>
+        <span class="nav__sub-title">Mobile</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Android" %}
@@ -188,7 +188,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-        <span class="nav__sub-title">Windows</span>
+        <span class="nav__sub-title">Window</span>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Win-Tool" %}
