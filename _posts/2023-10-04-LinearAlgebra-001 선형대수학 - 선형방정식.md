@@ -6,6 +6,7 @@ tags:
   - Algebra
   - 선형대수학
   - 선형방정식
+use_math: true
 ---
 ### 1) Linear equaiton
 
