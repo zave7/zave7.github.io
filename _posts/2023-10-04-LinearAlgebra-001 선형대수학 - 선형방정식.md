@@ -1,6 +1,6 @@
 ---
 title: 선형대수학 - 선형방정식
-categories: linear-algebra
+categories: Linear-Algebra
 tags: 
   - Linear
   - Algebra
