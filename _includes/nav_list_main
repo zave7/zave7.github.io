@@ -38,7 +38,7 @@
             </ul>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "LinearAlgebra" %}
+                    {% if category[0] == "Linear-Algebra" %}
                         <li><a href="/categories/linear-algebra" class="">선형대수학 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
