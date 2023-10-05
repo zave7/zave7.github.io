@@ -103,15 +103,13 @@ $$
 - row 3 → (3, 7)
 - row 4 → (4, 8)
 
-<aside>
+
 💡 [ Theorem 1 ]
 - Uniqueness of the Reduced Echelon Form
 
 각 행렬은 하나의 감소된 각 행렬에 대해 row equivalent 하다.
-다시말해 각각의 행렬은 1개의 reduced echelon form 만을 가진다.
+다시말해 각각의 행렬은 1개의 reduced echelon form 만을 가진다.  
 `Each matrix is row equivalent to one and only one reduced echelon matrix.`
-
-</aside>
 
 ### 5) Row reduction algorithm
 
@@ -263,7 +261,7 @@ x_{4} \text{ is free }
 \right\}
 $$
 
-<aside>
+
 💡 [Theorem 2]
 - Existence and Uniqueness Theorem
 
@@ -277,16 +275,13 @@ $$
 0 = 7?
 $$
 
-- augmented matrix에 row reduction을 통해서 구한 reduced echelon form에서 맨 오른쪽 컬럼이 pivot 컬럼이 아닌 경우에만 해가 존재한다.
-- consistent 한 linear system의 경우 free variable이 없을 경우에 unique solution 을 가지고, 1개 이상의 free variable이 존재할 경우에는 무한히 많은 해를 가진다.
+augmented matrix에 row reduction을 통해서 구한 reduced echelon form에서 맨 오른쪽 컬럼이 pivot 컬럼이 아닌 경우에만 해가 존재한다.  
+consistent 한 linear system의 경우 free variable이 없을 경우에 unique solution 을 가지고, 1개 이상의 free variable이 존재할 경우에는 무한히 많은 해를 가진다.  
 
-```Plain text
-A linear system is `consistent` if and only if the rightmost column of the augmented matrix is not a pivot column - that is, if and only an `echelon form` of the `augmented matrix` has no row of the forms
+  
+  A linear system is `consistent` if and only if the rightmost column of the augmented matrix is not a pivot column - that is, if and only an `echelon form` of the `augmented matrix` has no row of the forms
 
-$`[0\quad・・・\quad0\quad b]\quad \text{with b is nonzero}`$
+  $`[0\quad・・・\quad0\quad b]\quad \text{with b is nonzero}`$
 
-If a linear system is consistent, then the solution set contains either (i) a `unique` solution, when there are `no free` variables, or (ii) `infinitely` many solutions, then there is `at least one free` variables.
-```
-
-
-</aside>
+  If a linear system is consistent, then the solution set contains either (i) a `unique` solution, when there are `no free` variables, or (ii) `infinitely` many solutions, then there is `at least one free` variables.
+  
