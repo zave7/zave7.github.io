@@ -50,6 +50,13 @@
                     {% endif %}
                 {% endfor %}
             </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "ML-Algorithm" %}
+                        <li><a href="/categories/numpy" class="">ML-Algorithm ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
         <span class="nav__sub-title">MQ</span>
             <ul>
                 {% for category in site.categories %}
