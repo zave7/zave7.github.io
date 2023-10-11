@@ -21,19 +21,6 @@ fig, ax = plt.subplots(figsize=(5, 5))
 ax.hist(x=data)
 
 ```
-
-
-
-
-    (array([1., 0., 1., 2., 0., 0., 2., 3., 0., 1.]),
-     array([-2.32546836, -1.94938303, -1.57329769, -1.19721236, -0.82112703,
-            -0.4450417 , -0.06895636,  0.30712897,  0.6832143 ,  1.05929964,
-             1.43538497]),
-     <BarContainer object of 10 artists>)
-
-
-
-
     
 ![png](/images/ml/knn/knn_01.png)
     
@@ -96,15 +83,6 @@ ax.scatter(data[:,0], data[:,1])
     cent = [-4  4]
     mean = [-3.99231889  4.11606231]
     std = [1.04389966 1.81089299]
-
-
-
-
-
-    <matplotlib.collections.PathCollection at 0x11e5aff90>
-
-
-
 
     
 ![png](/images/ml/knn/knn_02.png)
